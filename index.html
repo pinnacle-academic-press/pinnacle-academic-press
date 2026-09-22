@@ -29,7 +29,20 @@
         }
     </script>
     <style>
-        /* CSS Variables Definition */
+        /* @keyframes scrollTicker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-ticker {
+  display: flex;
+  width: max-content;
+  animation: scrollTicker 30s linear infinite;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}CSS Variables Definition */
         :root {
             --primary-bg-dark: #0049B7;    /* Deep Royal Blue */
             --accent-cyan: #00DDFF;        /* Electric Cyan */
@@ -712,151 +725,89 @@
         </div>
     </section>
 
-    <!-- Indexing & Abstracting Section -->
-    <section id="indexing" class="py-20 bg-white border-t border-slate-200 fade-in-section">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-xs font-semibold px-3 py-1 rounded-full bg-[#FFF685] text-[#0049B7] border border-amber-200">Global Visibility</span>
-                <h2 class="text-3xl font-bold font-serif text-slate-900 mt-4 mb-4">Indexing &amp; Abstracting</h2>
-                <p class="text-slate-600">Pinnacle Academic Press journals and published monographs are indexed, archived, and abstracted across leading international academic directories and repositories.</p>
-            </div>
+    <section class="py-16 bg-slate-50 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 mb-8 text-center">
+    <h2 class="text-3xl font-bold font-serif text-slate-900">Indexing & Abstracting</h2>
+    <p class="text-slate-600 mt-2 max-w-2xl mx-auto">
+      Pinnacle Academic Press journals and published monographs are indexed, archived, and abstracted across leading international academic directories and repositories.
+    </p>
+  </div>
 
-            <!-- Complete Indexing Logos Grid -->
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-                <!-- ISSN -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-2xl flex flex-col items-center justify-center hover:border-[#00DDFF] hover:shadow-lg transition-all duration-300 group">
-                    <span class="text-2xl font-black tracking-wider text-[#FF1D58] group-hover:scale-105 transition-transform">ISSN</span>
-                    <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">International Standard Serial Number</span>
-                </div>
-
-                <!-- SSRN -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-2xl flex flex-col items-center justify-center hover:border-[#00DDFF] hover:shadow-lg transition-all duration-300 group">
-                    <span class="text-xl font-serif font-bold text-[#0049B7] tracking-tighter group-hover:scale-105 transition-transform">SSRN</span>
-                    <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Social Science Research Network</span>
-                </div>
-
-                <!-- ResearchGate -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-2xl flex flex-col items-center justify-center hover:border-[#00DDFF] hover:shadow-lg transition-all duration-300 group">
-                    <span class="text-lg font-serif font-bold text-white bg-[#00DDFF] text-slate-900 px-3 py-1 rounded-md shadow-sm group-hover:scale-105 transition-transform font-bold">R<sup>G</sup></span>
-                    <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">ResearchGate Network</span>
-                </div>
-
-                <!-- Zenodo -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-2xl flex flex-col items-center justify-center hover:border-[#00DDFF] hover:shadow-lg transition-all duration-300 group">
-                    <span class="text-xl font-bold bg-[#0049B7] text-white px-3 py-1 rounded-md shadow-sm group-hover:scale-105 transition-transform">zenodo</span>
-                    <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Zenodo Repository</span>
-                </div>
-
-                <!-- OpenAIRE -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-2xl flex flex-col items-center justify-center hover:border-[#00DDFF] hover:shadow-lg transition-all duration-300 group">
-                    <span class="text-sm font-bold text-[#0049B7] flex items-center gap-1 group-hover:scale-105 transition-transform"><span class="text-[#FF1D58] text-base font-black">O+</span> OpenAIRE</span>
-                    <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Open Access Infrastructure</span>
-                </div>
-
-                <!-- Google Scholar -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-2xl flex flex-col items-center justify-center hover:border-[#00DDFF] hover:shadow-lg transition-all duration-300 group">
-                    <span class="font-serif font-bold text-sm tracking-tight group-hover:scale-105 transition-transform"><span class="text-[#0049B7]">G</span><span class="text-[#FF1D58]">o</span><span class="text-[#F75990]">o</span><span class="text-[#0049B7]">g</span><span class="text-emerald-600">l</span><span class="text-[#FF1D58]">e</span> Scholar</span>
-                    <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Google Scholar Index</span>
-                </div>
-
-                <!-- ROAD -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-2xl flex flex-col items-center justify-center hover:border-[#00DDFF] hover:shadow-lg transition-all duration-300 group">
-                    <span class="text-xl font-black tracking-widest text-[#FF1D58] group-hover:scale-105 transition-transform">RO@D</span>
-                    <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Directory of Open Access Scholarly Resources</span>
-                </div>
-
-                <!-- DOAJ -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-2xl flex flex-col items-center justify-center hover:border-[#00DDFF] hover:shadow-lg transition-all duration-300 group">
-                    <span class="text-xl font-bold tracking-tight text-slate-900 flex items-center gap-1 group-hover:scale-105 transition-transform"><span class="flex gap-0.5"><span class="w-1.5 h-4 bg-[#FF1D58] rounded-sm"></span><span class="w-1.5 h-4 bg-[#F75990] rounded-sm"></span><span class="w-1.5 h-4 bg-amber-500 rounded-sm"></span></span> DOAJ</span>
-                    <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Directory of Open Access Journals</span>
-                </div>
-
-                <!-- Crossref / DOI -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-2xl flex flex-col items-center justify-center hover:border-[#00DDFF] hover:shadow-lg transition-all duration-300 group">
-                    <span class="text-xs font-bold text-slate-800 flex items-center gap-1 group-hover:scale-105 transition-transform">Crossref <span class="bg-[#FFF685] text-slate-900 px-1.5 py-0.5 rounded text-[10px] font-bold border border-amber-300">DOI</span></span>
-                    <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Official DOI Registration</span>
-                </div>
-
-                <!-- ASCI -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-2xl flex flex-col items-center justify-center hover:border-[#00DDFF] hover:shadow-lg transition-all duration-300 group">
-                    <span class="text-lg font-serif font-bold text-[#0049B7] tracking-wide group-hover:scale-105 transition-transform">ASCI</span>
-                    <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Asian Science Citation Index</span>
-                </div>
-
-                <!-- EuroPub -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-2xl flex flex-col items-center justify-center hover:border-[#00DDFF] hover:shadow-lg transition-all duration-300 group">
-                    <span class="text-sm font-bold text-[#0049B7] group-hover:scale-105 transition-transform">🌱 EuroPub</span>
-                    <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Directory of Academic &amp; Scientific Journals</span>
-                </div>
-
-                <!-- SafetyLit -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-2xl flex flex-col items-center justify-center hover:border-[#00DDFF] hover:shadow-lg transition-all duration-300 group">
-                    <span class="text-xs font-bold text-white bg-[#0049B7] px-3 py-1.5 rounded-full group-hover:scale-105 transition-transform">SafetyLit</span>
-                    <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Safety Literature Database</span>
-                </div>
-
-                <!-- Root Indexing -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-2xl flex flex-col items-center justify-center hover:border-[#00DDFF] hover:shadow-lg transition-all duration-300 group">
-                    <span class="text-sm font-black tracking-tight text-slate-900 group-hover:scale-105 transition-transform"><span class="text-[#FF1D58]">ROOT</span>INDEXING</span>
-                    <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Journal Abstracting &amp; Indexing Service</span>
-                </div>
-
-                <!-- WorldCat -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-2xl flex flex-col items-center justify-center hover:border-[#00DDFF] hover:shadow-lg transition-all duration-300 group">
-                    <span class="text-base font-bold text-slate-900 group-hover:scale-105 transition-transform">🌐 WorldCat</span>
-                    <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Global Library Catalog</span>
-                </div>
-
-                <!-- Scilit -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-2xl flex flex-col items-center justify-center hover:border-[#00DDFF] hover:shadow-lg transition-all duration-300 group">
-                    <span class="text-lg font-bold text-[#0049B7] group-hover:scale-105 transition-transform">Scilit</span>
-                    <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Scientific Literature Database</span>
-                </div>
-
-                <!-- Mendeley -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-2xl flex flex-col items-center justify-center hover:border-[#00DDFF] hover:shadow-lg transition-all duration-300 group">
-                    <span class="text-sm font-bold text-[#FF1D58] group-hover:scale-105 transition-transform">🔴 MENDELEY</span>
-                    <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Research Reference Index</span>
-                </div>
-
-                <!-- Dimensions -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-2xl flex flex-col items-center justify-center hover:border-[#00DDFF] hover:shadow-lg transition-all duration-300 group">
-                    <span class="text-base font-bold text-slate-900 flex items-center gap-1 group-hover:scale-105 transition-transform"><span class="w-2.5 h-2.5 bg-[#00DDFF] rounded-sm"></span> Dimensions</span>
-                    <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Linked Research Data</span>
-                </div>
-
-                <!-- ISBN -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-2xl flex flex-col items-center justify-center hover:border-[#00DDFF] hover:shadow-lg transition-all duration-300 group">
-                    <span class="text-lg font-extrabold text-[#0049B7] tracking-tighter bg-slate-200 px-3 py-1 rounded group-hover:scale-105 transition-transform">isbn</span>
-                    <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Standard Book Number Index</span>
-                </div>
-
-                <!-- Scribd -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-2xl flex flex-col items-center justify-center hover:border-[#00DDFF] hover:shadow-lg transition-all duration-300 group">
-                    <span class="text-sm font-bold text-slate-900 tracking-wider group-hover:scale-105 transition-transform">SCRIBD</span>
-                    <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Digital Library Repository</span>
-                </div>
-
-                <!-- Academia.edu -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-2xl flex flex-col items-center justify-center hover:border-[#00DDFF] hover:shadow-lg transition-all duration-300 group">
-                    <span class="text-xs font-bold text-white bg-[#0049B7] px-2.5 py-1 rounded group-hover:scale-105 transition-transform">Academia.edu</span>
-                    <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Scholarly Sharing Network</span>
-                </div>
-
-                <!-- Index Copernicus -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-2xl flex flex-col items-center justify-center hover:border-[#00DDFF] hover:shadow-lg transition-all duration-300 group">
-                    <span class="text-[11px] font-bold text-slate-800 text-center group-hover:scale-105 transition-transform">INDEX COPERNICUS</span>
-                    <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">International Database</span>
-                </div>
-
-                <!-- CiteFactor -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-2xl flex flex-col items-center justify-center hover:border-[#00DDFF] hover:shadow-lg transition-all duration-300 group sm:col-span-2 lg:col-span-1">
-                    <span class="text-sm font-bold text-[#0049B7] group-hover:scale-105 transition-transform">CiteFactor</span>
-                    <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Academic Scientific Journals</span>
-                </div>
-            </div>
+  <!-- Scrolling Marquee Wrapper -->
+  <div class="relative w-full overflow-hidden">
+    <div class="animate-ticker flex gap-6 py-4">
+      
+      <!-- FIRST SET OF CARDS -->
+      <div class="flex gap-6 shrink-0">
+        <!-- ISSN Card -->
+        <div class="w-72 bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center text-center">
+          <span class="text-2xl font-bold text-red-500 tracking-wider">ISSN</span>
+          <span class="text-xs text-slate-500 mt-1">International Standard Serial Number</span>
         </div>
-    </section>
+        <!-- SSRN Card -->
+        <div class="w-72 bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center text-center">
+          <span class="text-xl font-bold text-blue-900">SSRN</span>
+          <span class="text-xs text-slate-500 mt-1">Social Science Research Network</span>
+        </div>
+        <!-- ResearchGate Card -->
+        <div class="w-72 bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center text-center">
+          <span class="text-xl font-bold px-3 py-1 bg-cyan-500 text-white rounded">RG</span>
+          <span class="text-xs text-slate-500 mt-1">ResearchGate Network</span>
+        </div>
+        <!-- Zenodo Card -->
+        <div class="w-72 bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center text-center">
+          <span class="text-lg font-bold px-3 py-1 bg-blue-700 text-white rounded-lg">zenodo</span>
+          <span class="text-xs text-slate-500 mt-1">Zenodo Repository</span>
+        </div>
+        <!-- Google Scholar Card -->
+        <div class="w-72 bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center text-center">
+          <span class="text-base font-semibold text-slate-800">Google <span class="text-blue-600">S</span><span class="text-red-500">c</span><span class="text-amber-500">h</span><span class="text-blue-600">o</span><span class="text-green-600">l</span><span class="text-red-500">a</span><span class="text-blue-600">r</span></span>
+          <span class="text-xs text-slate-500 mt-1">Google Scholar Index</span>
+        </div>
+        <!-- DOAJ Card -->
+        <div class="w-72 bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center text-center">
+          <span class="text-xl font-bold text-slate-900"><span class="text-red-500">III</span> DOAJ</span>
+          <span class="text-xs text-slate-500 mt-1">Directory of Open Access Journals</span>
+        </div>
+      </div>
+
+      <!-- DUPLICATE SET FOR INFINITE LOOP EFFECT -->
+      <div class="flex gap-6 shrink-0" aria-hidden="true">
+        <!-- ISSN Card -->
+        <div class="w-72 bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center text-center">
+          <span class="text-2xl font-bold text-red-500 tracking-wider">ISSN</span>
+          <span class="text-xs text-slate-500 mt-1">International Standard Serial Number</span>
+        </div>
+        <!-- SSRN Card -->
+        <div class="w-72 bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center text-center">
+          <span class="text-xl font-bold text-blue-900">SSRN</span>
+          <span class="text-xs text-slate-500 mt-1">Social Science Research Network</span>
+        </div>
+        <!-- ResearchGate Card -->
+        <div class="w-72 bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center text-center">
+          <span class="text-xl font-bold px-3 py-1 bg-cyan-500 text-white rounded">RG</span>
+          <span class="text-xs text-slate-500 mt-1">ResearchGate Network</span>
+        </div>
+        <!-- Zenodo Card -->
+        <div class="w-72 bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center text-center">
+          <span class="text-lg font-bold px-3 py-1 bg-blue-700 text-white rounded-lg">zenodo</span>
+          <span class="text-xs text-slate-500 mt-1">Zenodo Repository</span>
+        </div>
+        <!-- Google Scholar Card -->
+        <div class="w-72 bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center text-center">
+          <span class="text-base font-semibold text-slate-800">Google <span class="text-blue-600">S</span><span class="text-red-500">c</span><span class="text-amber-500">h</span><span class="text-blue-600">o</span><span class="text-green-600">l</span><span class="text-red-500">a</span><span class="text-blue-600">r</span></span>
+          <span class="text-xs text-slate-500 mt-1">Google Scholar Index</span>
+        </div>
+        <!-- DOAJ Card -->
+        <div class="w-72 bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center text-center">
+          <span class="text-xl font-bold text-slate-900"><span class="text-red-500">III</span> DOAJ</span>
+          <span class="text-xs text-slate-500 mt-1">Directory of Open Access Journals</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
     <!-- Submissions Section -->
     <section id="submissions" class="py-20 border-t border-slate-200 bg-slate-50 fade-in-section">
