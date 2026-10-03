@@ -7,37 +7,37 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        schoolGreen: '#059669',       /* Emerald Green Accent */
-                        schoolDarkGreen: '#047857',   /* Darker Emerald */
-                        schoolLightBg: '#F0FDF4',     /* Light Mint Background */
-                        schoolCardBg: '#FFFFFF',      /* Pure White Card Tone */
+                        pressGold: '#D4AF37',         /* Rich Academic Gold Accent */
+                        pressLightGold: '#F3E5AB',    /* Soft Gold Highlight */
+                        pressDark: '#0B0F19',         /* Deep Obsidian Background */
+                        pressCard: '#131B2E',         /* Dark Card Background */
+                        pressBorder: '#1E293B',       /* Subtle Border Tone */
                     },
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        serif: ['Cinzel', 'serif'],
                     }
                 }
             }
         }
     </script>
     <style>
-        /* CSS Variables Definition */
         :root {
-            --school-green: #059669;
+            --press-gold: #D4AF37;
             --accent-pink: #FF1D58;
             --subtle-pink: #F75990;
             --highlight-yellow: #FFF685;
         }
 
         .hero-pattern {
-            background-image: radial-gradient(rgba(5, 150, 105, 0.08) 1px, transparent 1px);
-            background-size: 24px 24px;
+            background-image: radial-gradient(rgba(212, 175, 55, 0.08) 1px, transparent 1px);
+            background-size: 28px 28px;
         }
 
         /* Custom scrollbar styling */
@@ -45,25 +45,21 @@
             width: 8px;
         }
         .custom-scrollbar::-webkit-scrollbar-track {
-            background: #f1f5f9;
+            background: #0B0F19;
             border-radius: 8px;
         }
         .custom-scrollbar::-webkit-scrollbar-thumb {
-            background: #059669;
+            background: #D4AF37;
             border-radius: 8px;
         }
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-            background: #047857;
+            background: #F3E5AB;
         }
 
         /* Infinite Horizontal Marquee Animation */
         @keyframes marqueeScroll {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-50%);
-            }
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
         }
 
         .marquee-track {
@@ -81,15 +77,9 @@
         }
 
         @keyframes rotate3D {
-            0% {
-                transform: rotateX(15deg) rotateY(0deg) rotateZ(0deg);
-            }
-            50% {
-                transform: rotateX(-15deg) rotateY(180deg) rotateZ(5deg);
-            }
-            100% {
-                transform: rotateX(15deg) rotateY(360deg) rotateZ(0deg);
-            }
+            0% { transform: rotateX(15deg) rotateY(0deg) rotateZ(0deg); }
+            50% { transform: rotateX(-15deg) rotateY(180deg) rotateZ(5deg); }
+            100% { transform: rotateX(15deg) rotateY(360deg) rotateZ(0deg); }
         }
 
         @keyframes floatLogo {
@@ -98,7 +88,7 @@
         }
 
         @keyframes pulseGlow {
-            0%, 100% { filter: drop-shadow(0 0 10px rgba(5, 150, 105, 0.4)); }
+            0%, 100% { filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.4)); }
             50% { filter: drop-shadow(0 0 22px rgba(255, 29, 88, 0.8)); }
         }
 
@@ -109,25 +99,13 @@
 
         /* Hero Text Animations */
         @keyframes heroTextEntry {
-            0% {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
         }
 
         @keyframes titleShimmer {
-            0%, 100% {
-                filter: drop-shadow(0 0 0px rgba(5, 150, 105, 0));
-                transform: scale(1);
-            }
-            50% {
-                filter: drop-shadow(0 0 12px rgba(5, 150, 105, 0.3));
-                transform: scale(1.01);
-            }
+            0%, 100% { filter: drop-shadow(0 0 0px rgba(212, 175, 55, 0)); transform: scale(1); }
+            50% { filter: drop-shadow(0 0 12px rgba(212, 175, 55, 0.3)); transform: scale(1.01); }
         }
 
         .animate-hero-text {
@@ -151,8 +129,8 @@
         }
 
         @keyframes antennaPulse {
-            0%, 100% { opacity: 0.6; filter: drop-shadow(0 0 4px rgba(5, 150, 105, 0.7)); }
-            50% { opacity: 1; filter: drop-shadow(0 0 14px rgba(5, 150, 105, 1)); }
+            0%, 100% { opacity: 0.6; filter: drop-shadow(0 0 4px rgba(212, 175, 55, 0.7)); }
+            50% { opacity: 1; filter: drop-shadow(0 0 14px rgba(212, 175, 55, 1)); }
         }
 
         @keyframes fullRobotFloat {
@@ -167,7 +145,7 @@
 
         .animate-full-robot {
             animation: fullRobotFloat 3.5s ease-in-out infinite;
-            filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.15));
+            filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.3));
         }
 
         .robot-eye {
@@ -201,24 +179,24 @@
         }
     </style>
 </head>
-<body class="bg-white text-slate-800 font-sans antialiased selection:bg-[#059669] selection:text-white">
+<body class="bg-[#0B0F19] text-slate-200 font-sans antialiased selection:bg-pressGold selection:text-black">
 
     <!-- Header & Navigation -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm transition-all duration-300">
+    <header class="sticky top-0 z-50 bg-[#0B0F19]/95 backdrop-blur border-b border-slate-800 shadow-xl transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20 gap-4">
                 <!-- Large 3D Animated Logo & Brand -->
                 <a href="#" class="flex items-center space-x-4 group shrink-0">
-                    <div class="w-14 h-14 rounded-2xl flex items-center justify-center bg-schoolGreen border-2 border-emerald-300 shadow-xl overflow-hidden scene-3d p-1.5 transition-transform duration-300 group-hover:scale-110">
+                    <div class="w-14 h-14 rounded-2xl flex items-center justify-center bg-gradient-to-br from-pressGold to-yellow-700 border-2 border-yellow-200/40 shadow-xl overflow-hidden scene-3d p-1.5 transition-transform duration-300 group-hover:scale-110">
                         <svg viewBox="0 0 100 100" class="w-full h-full animate-3d-logo" xmlns="http://www.w3.org/2000/svg">
                             <defs>
                                 <linearGradient id="gradRed" x1="0%" y1="0%" x2="100%" y2="100%">
                                     <stop offset="0%" stop-color="#FF1D58" />
                                     <stop offset="100%" stop-color="#990022" />
                                 </linearGradient>
-                                <linearGradient id="gradCyan" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#059669" />
-                                    <stop offset="100%" stop-color="#047857" />
+                                <linearGradient id="gradGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#D4AF37" />
+                                    <stop offset="100%" stop-color="#AA771C" />
                                 </linearGradient>
                                 <linearGradient id="gradPink" x1="0%" y1="0%" x2="100%" y2="100%">
                                     <stop offset="0%" stop-color="#F75990" />
@@ -227,52 +205,52 @@
                             </defs>
                             <polygon points="10,90 35,35 45,75" fill="url(#gradRed)" opacity="0.95"/>
                             <polygon points="10,90 45,75 25,95" fill="#880022" opacity="0.9"/>
-                            <polygon points="25,95 45,75 60,60 55,95" fill="url(#gradCyan)" opacity="0.95"/>
+                            <polygon points="25,95 45,75 60,60 55,95" fill="url(#gradGold)" opacity="0.95"/>
                             <polygon points="55,10 85,55 60,60" fill="url(#gradPink)" opacity="0.9"/>
                             <polygon points="85,55 90,90 55,95 60,60" fill="#991133" opacity="0.95"/>
                             <polygon points="55,10 60,60 45,45" fill="#FFF685" opacity="0.7"/>
                         </svg>
                     </div>
                     <div>
-                        <span class="text-lg lg:text-xl font-bold tracking-tight font-serif text-slate-950 whitespace-nowrap transition-colors group-hover:text-schoolGreen block">Pinnacle Academic Press</span>
-                        <span class="block text-[10px] lg:text-xs text-schoolGreen font-semibold tracking-wider uppercase whitespace-nowrap">Journal of Social Science and Education</span>
+                        <span class="text-lg lg:text-xl font-bold tracking-tight font-serif text-white whitespace-nowrap transition-colors group-hover:text-pressGold block">Pinnacle Academic Press</span>
+                        <span class="block text-[10px] lg:text-xs text-pressGold font-semibold tracking-wider uppercase whitespace-nowrap">Journal of Social Science and Education</span>
                     </div>
                 </a>
 
                 <!-- Desktop Nav Links -->
                 <nav class="hidden xl:flex items-center space-x-4 text-sm font-medium">
-                    <a href="#home" class="text-schoolGreen font-semibold hover:text-emerald-700 transition-colors">Home</a>
-                    <a href="#journals" class="text-slate-600 hover:text-schoolGreen transition-colors">Journals</a>
-                    <a href="#current-issue" class="text-slate-600 hover:text-schoolGreen transition-colors">Current Issue</a>
-                    <a href="#catalog" class="text-slate-600 hover:text-schoolGreen transition-colors">Catalog</a>
-                    <a href="#about" class="text-slate-600 hover:text-schoolGreen transition-colors">About Us</a>
-                    <a href="#peer-review-policy" class="text-slate-600 hover:text-schoolGreen transition-colors">Peer Review</a>
-                    <a href="#indexing" class="text-slate-600 hover:text-schoolGreen transition-colors">Indexing</a>
-                    <a href="#submissions" class="text-slate-600 hover:text-schoolGreen transition-colors">Submissions</a>
-                    <a href="#contact" class="text-slate-600 hover:text-schoolGreen transition-colors">Contact</a>
+                    <a href="#home" class="text-pressGold font-semibold hover:text-yellow-300 transition-colors">Home</a>
+                    <a href="#journals" class="text-slate-300 hover:text-pressGold transition-colors">Journals</a>
+                    <a href="#current-issue" class="text-slate-300 hover:text-pressGold transition-colors">Current Issue</a>
+                    <a href="#catalog" class="text-slate-300 hover:text-pressGold transition-colors">Catalog</a>
+                    <a href="#about" class="text-slate-300 hover:text-pressGold transition-colors">About Us</a>
+                    <a href="#peer-review-policy" class="text-slate-300 hover:text-pressGold transition-colors">Peer Review</a>
+                    <a href="#indexing" class="text-slate-300 hover:text-pressGold transition-colors">Indexing</a>
+                    <a href="#submissions" class="text-slate-300 hover:text-pressGold transition-colors">Submissions</a>
+                    <a href="#contact" class="text-slate-300 hover:text-pressGold transition-colors">Contact</a>
                 </nav>
 
                 <!-- Tablet Nav Links (Compact) -->
                 <nav class="hidden md:flex xl:hidden items-center space-x-2.5 text-xs font-medium">
-                    <a href="#home" class="text-schoolGreen font-semibold">Home</a>
-                    <a href="#current-issue" class="text-slate-600 hover:text-schoolGreen">Current Issue</a>
-                    <a href="#journals" class="text-slate-600 hover:text-schoolGreen">Journals</a>
-                    <a href="#about" class="text-slate-600 hover:text-schoolGreen">About</a>
-                    <a href="#peer-review-policy" class="text-slate-600 hover:text-schoolGreen">Review</a>
-                    <a href="#indexing" class="text-slate-600 hover:text-schoolGreen">Indexing</a>
-                    <a href="#submissions" class="text-slate-600 hover:text-schoolGreen">Submissions</a>
+                    <a href="#home" class="text-pressGold font-semibold">Home</a>
+                    <a href="#current-issue" class="text-slate-300 hover:text-pressGold">Current Issue</a>
+                    <a href="#journals" class="text-slate-300 hover:text-pressGold">Journals</a>
+                    <a href="#about" class="text-slate-300 hover:text-pressGold">About</a>
+                    <a href="#peer-review-policy" class="text-slate-300 hover:text-pressGold">Review</a>
+                    <a href="#indexing" class="text-slate-300 hover:text-pressGold">Indexing</a>
+                    <a href="#submissions" class="text-slate-300 hover:text-pressGold">Submissions</a>
                 </nav>
 
                 <!-- CTA Button -->
                 <div class="hidden lg:flex items-center shrink-0">
-                    <a href="#submissions" class="px-5 py-2.5 rounded-full bg-schoolGreen text-white text-sm font-bold hover:bg-emerald-700 hover:scale-105 active:scale-95 transition-all duration-200 shadow-lg shadow-emerald-600/25 whitespace-nowrap">
+                    <a href="#submissions" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-pressGold to-yellow-600 text-black text-sm font-bold hover:scale-105 active:scale-95 transition-all duration-200 shadow-lg shadow-yellow-600/25 whitespace-nowrap">
                         REGISTRATION
                     </a>
                 </div>
 
                 <!-- Mobile Menu Button -->
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors focus:outline-none">
+                    <button id="mobile-menu-btn" class="p-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 transition-colors focus:outline-none">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                         </svg>
@@ -282,44 +260,44 @@
         </div>
 
         <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-2 shadow-lg transition-all">
-            <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-schoolGreen bg-emerald-50">Home</a>
-            <a href="#current-issue" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-schoolGreen">Current Issue &amp; Articles</a>
-            <a href="#journals" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-schoolGreen">Journals</a>
-            <a href="#catalog" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-schoolGreen">Catalog &amp; Books</a>
-            <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-schoolGreen">About Us</a>
-            <a href="#peer-review-policy" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-schoolGreen">Peer Review Policy</a>
-            <a href="#indexing" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-schoolGreen">Indexing &amp; Abstracting</a>
-            <a href="#submissions" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-schoolGreen">Submissions</a>
-            <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-schoolGreen">Contact</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-[#131B2E] border-b border-slate-800 px-4 pt-2 pb-6 space-y-2 shadow-2xl transition-all">
+            <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-pressGold bg-yellow-500/10">Home</a>
+            <a href="#current-issue" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-pressGold">Current Issue &amp; Articles</a>
+            <a href="#journals" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-pressGold">Journals</a>
+            <a href="#catalog" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-pressGold">Catalog &amp; Books</a>
+            <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-pressGold">About Us</a>
+            <a href="#peer-review-policy" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-pressGold">Peer Review Policy</a>
+            <a href="#indexing" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-pressGold">Indexing &amp; Abstracting</a>
+            <a href="#submissions" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-pressGold">Submissions</a>
+            <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-pressGold">Contact</a>
             <div class="pt-4">
-                <a href="#submissions" class="w-full text-center block px-4 py-2.5 rounded-full bg-schoolGreen text-white font-bold hover:bg-emerald-700 transition-colors">REGISTRATION</a>
+                <a href="#submissions" class="w-full text-center block px-4 py-2.5 rounded-full bg-gradient-to-r from-pressGold to-yellow-600 text-black font-bold transition-colors">REGISTRATION</a>
             </div>
         </div>
     </header>
 
     <!-- Hero Section with Animated Heading -->
-    <section id="home" class="relative hero-pattern py-24 lg:py-32 overflow-hidden border-b border-slate-200 bg-gradient-to-b from-emerald-50/50 to-white">
+    <section id="home" class="relative hero-pattern py-24 lg:py-32 overflow-hidden border-b border-slate-800 bg-gradient-to-b from-[#131B2E] to-[#0B0F19]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="max-w-3xl mx-auto text-center">
-                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-schoolGreen border border-emerald-300 mb-6 transition-transform hover:scale-105 duration-300 shadow-sm">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-yellow-500/10 text-pressGold border border-yellow-500/30 mb-6 transition-transform hover:scale-105 duration-300 shadow-sm">
                     Peer-Reviewed Open Access Publishing
                 </span>
                 
-                <h1 class="text-4xl sm:text-6xl font-bold font-serif tracking-tight text-slate-900 mb-6 leading-tight animate-hero-text">
+                <h1 class="text-4xl sm:text-6xl font-bold font-serif tracking-tight text-white mb-6 leading-tight animate-hero-text">
                     Advancing Scholarly Excellence in <br class="hidden sm:inline">
-                    <span class="text-schoolGreen italic animate-title-shimmer">Social Science &amp; Education</span>
+                    <span class="text-pressGold italic animate-title-shimmer">Social Science &amp; Education</span>
                 </h1>
 
-                <p class="text-lg sm:text-xl text-slate-600 mb-10 leading-relaxed">
+                <p class="text-lg sm:text-xl text-slate-300 mb-10 leading-relaxed font-light">
                     Pinnacle Academic Press champions rigorous peer review, innovative pedagogical research, and interdisciplinary discourse to solve complex global challenges.
                 </p>
 
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="#current-issue" class="w-full sm:w-auto px-8 py-4 rounded-full bg-schoolGreen text-white font-bold hover:bg-emerald-700 hover:shadow-emerald-600/40 hover:-translate-y-0.5 transition-all duration-300 shadow-xl shadow-emerald-600/20">
+                    <a href="#current-issue" class="w-full sm:w-auto px-8 py-4 rounded-full bg-pressGold text-black font-bold hover:bg-pressLightGold hover:shadow-yellow-600/40 hover:-translate-y-0.5 transition-all duration-300 shadow-xl shadow-yellow-600/20">
                         View Current Issue
                     </a>
-                    <a href="#submissions" class="w-full sm:w-auto px-8 py-4 rounded-full bg-white hover:bg-slate-50 text-slate-700 font-semibold border-2 border-emerald-200 hover:border-schoolGreen hover:-translate-y-0.5 transition-all duration-300 shadow-sm">
+                    <a href="#submissions" class="w-full sm:w-auto px-8 py-4 rounded-full bg-[#131B2E] hover:bg-slate-800 text-slate-200 font-semibold border-2 border-slate-700 hover:border-pressGold hover:-translate-y-0.5 transition-all duration-300 shadow-sm">
                         Author Guidelines
                     </a>
                 </div>
@@ -328,12 +306,12 @@
     </section>
 
     <!-- Current Issue Section -->
-    <section id="current-issue" class="py-20 bg-slate-50 border-t border-slate-200 fade-in-section">
+    <section id="current-issue" class="py-20 bg-[#0B0F19] border-t border-slate-800 fade-in-section">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-xs font-semibold px-3 py-1 rounded-full bg-emerald-100 text-schoolGreen border border-emerald-200">Volume 4, Issue 3 (Published September / October 2026)</span>
-                <h2 class="text-3xl sm:text-4xl font-bold font-serif text-slate-900 mt-4 mb-4">Current Issue &amp; Recent Published Research</h2>
-                <p class="text-slate-600">Explore our peer-reviewed open access papers, featuring qualitative phenomenology, educator well-being, and quantitative educational frameworks.</p>
+                <span class="text-xs font-semibold px-3 py-1 rounded-full bg-yellow-500/10 text-pressGold border border-yellow-500/30">Volume 4, Issue 3 (Published September / October 2026)</span>
+                <h2 class="text-3xl sm:text-4xl font-bold font-serif text-white mt-4 mb-4">Current Issue &amp; Recent Published Research</h2>
+                <p class="text-slate-400">Explore our peer-reviewed open access papers, featuring qualitative phenomenology, educator well-being, and quantitative educational frameworks.</p>
             </div>
 
             <!-- Published Articles Container -->
@@ -344,66 +322,66 @@
     </section>
 
     <!-- Featured Real Journals Section (Infinite Horizontal Marquee) -->
-    <section id="journals" class="py-20 bg-white border-t border-slate-200 fade-in-section overflow-hidden">
+    <section id="journals" class="py-20 bg-[#131B2E] border-t border-slate-800 fade-in-section overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
             <div class="text-center max-w-2xl mx-auto">
-                <h2 class="text-3xl font-bold font-serif text-slate-900 mb-4">Our Featured Peer-Reviewed Journals</h2>
-                <p class="text-slate-600">Promoting high-impact empirical research across psychology, educational sciences, and technology integration.</p>
+                <h2 class="text-3xl font-bold font-serif text-white mb-4">Our Featured Peer-Reviewed Journals</h2>
+                <p class="text-slate-400">Promoting high-impact empirical research across psychology, educational sciences, and technology integration.</p>
             </div>
         </div>
 
         <!-- Marquee Wrapper with Fade Gradient Edges -->
         <div class="relative w-full overflow-hidden py-4">
-            <div class="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
-            <div class="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+            <div class="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-[#131B2E] to-transparent z-10 pointer-events-none"></div>
+            <div class="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-[#131B2E] to-transparent z-10 pointer-events-none"></div>
 
             <div class="marquee-track flex gap-8">
                 <!-- Set 1 -->
-                <div class="w-80 sm:w-96 shrink-0 bg-white border-2 border-slate-200 rounded-3xl p-6 hover:border-schoolGreen hover:shadow-xl transition-all duration-300 flex flex-col justify-between group shadow-sm">
+                <div class="w-80 sm:w-96 shrink-0 bg-[#0B0F19] border-2 border-slate-800 rounded-3xl p-6 hover:border-pressGold hover:shadow-xl transition-all duration-300 flex flex-col justify-between group shadow-sm">
                     <div>
                         <div class="flex items-center justify-between mb-4">
                             <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-[#FF1D58] text-white shadow-sm">Open Access</span>
                             <span class="text-xs text-slate-500 font-mono">ISSN: 1527-7143</span>
                         </div>
-                        <h3 class="text-xl font-bold font-serif text-slate-900 mb-3 group-hover:text-schoolGreen transition-colors">North American Journal of Psychology</h3>
-                        <p class="text-sm text-slate-600 mb-6 leading-relaxed">Publishes empirical research across psychology, educational development, social behavior, and quantitative structural frameworks.</p>
+                        <h3 class="text-xl font-bold font-serif text-white mb-3 group-hover:text-pressGold transition-colors">North American Journal of Psychology</h3>
+                        <p class="text-sm text-slate-400 mb-6 leading-relaxed">Publishes empirical research across psychology, educational development, social behavior, and quantitative structural frameworks.</p>
                     </div>
-                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <a href="#current-issue" class="text-schoolGreen text-sm font-semibold hover:text-[#FF1D58] inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                    <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                        <a href="#current-issue" class="text-pressGold text-sm font-semibold hover:text-[#FF1D58] inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                             Current Issue &rarr;
                         </a>
                         <span class="text-xs text-slate-500">Triannual</span>
                     </div>
                 </div>
 
-                <div class="w-80 sm:w-96 shrink-0 bg-white border-2 border-slate-200 rounded-3xl p-6 hover:border-schoolGreen hover:shadow-xl transition-all duration-300 flex flex-col justify-between group shadow-sm">
+                <div class="w-80 sm:w-96 shrink-0 bg-[#0B0F19] border-2 border-slate-800 rounded-3xl p-6 hover:border-pressGold hover:shadow-xl transition-all duration-300 flex flex-col justify-between group shadow-sm">
                     <div>
                         <div class="flex items-center justify-between mb-4">
                             <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-[#FF1D58] text-white shadow-sm">Open Access</span>
                             <span class="text-xs text-slate-500 font-mono">ISSN: 0883-0355</span>
                         </div>
-                        <h3 class="text-xl font-bold font-serif text-slate-900 mb-3 group-hover:text-schoolGreen transition-colors">International Journal of Educational Research</h3>
-                        <p class="text-sm text-slate-600 mb-6 leading-relaxed">Dedicated to educational reform, curriculum design, teacher beliefs, and pedagogical strategies on a global scale.</p>
+                        <h3 class="text-xl font-bold font-serif text-white mb-3 group-hover:text-pressGold transition-colors">International Journal of Educational Research</h3>
+                        <p class="text-sm text-slate-400 mb-6 leading-relaxed">Dedicated to educational reform, curriculum design, teacher beliefs, and pedagogical strategies on a global scale.</p>
                     </div>
-                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <a href="#current-issue" class="text-schoolGreen text-sm font-semibold hover:text-[#FF1D58] inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                    <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                        <a href="#current-issue" class="text-pressGold text-sm font-semibold hover:text-[#FF1D58] inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                             Current Issue &rarr;
                         </a>
                         <span class="text-xs text-slate-500">Bimonthly</span>
                     </div>
                 </div>
 
-                <div class="w-80 sm:w-96 shrink-0 bg-white border-2 border-slate-200 rounded-3xl p-6 hover:border-schoolGreen hover:shadow-xl transition-all duration-300 flex flex-col justify-between group shadow-sm">
+                <div class="w-80 sm:w-96 shrink-0 bg-[#0B0F19] border-2 border-slate-800 rounded-3xl p-6 hover:border-pressGold hover:shadow-xl transition-all duration-300 flex flex-col justify-between group shadow-sm">
                     <div>
                         <div class="flex items-center justify-between mb-4">
                             <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-[#FF1D58] text-white shadow-sm">Open Access</span>
                             <span class="text-xs text-slate-500 font-mono">ISSN: 0360-1315</span>
                         </div>
-                        <h3 class="text-xl font-bold font-serif text-slate-900 mb-3 group-hover:text-schoolGreen transition-colors">Computers &amp; Education</h3>
-                        <p class="text-sm text-slate-600 mb-6 leading-relaxed">Explores educational technology, constructivist learning methodologies, and quantitative/mixed-methods analyses in instruction.</p>
+                        <h3 class="text-xl font-bold font-serif text-white mb-3 group-hover:text-pressGold transition-colors">Computers &amp; Education</h3>
+                        <p class="text-sm text-slate-400 mb-6 leading-relaxed">Explores educational technology, constructivist learning methodologies, and quantitative/mixed-methods analyses in instruction.</p>
                     </div>
-                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <a href="#current-issue" class="text-schoolGreen text-sm font-semibold hover:text-[#FF1D58] inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                    <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                        <a href="#current-issue" class="text-pressGold text-sm font-semibold hover:text-[#FF1D58] inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                             Current Issue &rarr;
                         </a>
                         <span class="text-xs text-slate-500">Monthly</span>
@@ -411,51 +389,51 @@
                 </div>
 
                 <!-- Set 2 (Identical Duplicate for Seamless Infinite Loop) -->
-                <div class="w-80 sm:w-96 shrink-0 bg-white border-2 border-slate-200 rounded-3xl p-6 hover:border-schoolGreen hover:shadow-xl transition-all duration-300 flex flex-col justify-between group shadow-sm">
+                <div class="w-80 sm:w-96 shrink-0 bg-[#0B0F19] border-2 border-slate-800 rounded-3xl p-6 hover:border-pressGold hover:shadow-xl transition-all duration-300 flex flex-col justify-between group shadow-sm">
                     <div>
                         <div class="flex items-center justify-between mb-4">
                             <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-[#FF1D58] text-white shadow-sm">Open Access</span>
                             <span class="text-xs text-slate-500 font-mono">ISSN: 1527-7143</span>
                         </div>
-                        <h3 class="text-xl font-bold font-serif text-slate-900 mb-3 group-hover:text-schoolGreen transition-colors">North American Journal of Psychology</h3>
-                        <p class="text-sm text-slate-600 mb-6 leading-relaxed">Publishes empirical research across psychology, educational development, social behavior, and quantitative structural frameworks.</p>
+                        <h3 class="text-xl font-bold font-serif text-white mb-3 group-hover:text-pressGold transition-colors">North American Journal of Psychology</h3>
+                        <p class="text-sm text-slate-400 mb-6 leading-relaxed">Publishes empirical research across psychology, educational development, social behavior, and quantitative structural frameworks.</p>
                     </div>
-                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <a href="#current-issue" class="text-schoolGreen text-sm font-semibold hover:text-[#FF1D58] inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                    <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                        <a href="#current-issue" class="text-pressGold text-sm font-semibold hover:text-[#FF1D58] inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                             Current Issue &rarr;
                         </a>
                         <span class="text-xs text-slate-500">Triannual</span>
                     </div>
                 </div>
 
-                <div class="w-80 sm:w-96 shrink-0 bg-white border-2 border-slate-200 rounded-3xl p-6 hover:border-schoolGreen hover:shadow-xl transition-all duration-300 flex flex-col justify-between group shadow-sm">
+                <div class="w-80 sm:w-96 shrink-0 bg-[#0B0F19] border-2 border-slate-800 rounded-3xl p-6 hover:border-pressGold hover:shadow-xl transition-all duration-300 flex flex-col justify-between group shadow-sm">
                     <div>
                         <div class="flex items-center justify-between mb-4">
                             <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-[#FF1D58] text-white shadow-sm">Open Access</span>
                             <span class="text-xs text-slate-500 font-mono">ISSN: 0883-0355</span>
                         </div>
-                        <h3 class="text-xl font-bold font-serif text-slate-900 mb-3 group-hover:text-schoolGreen transition-colors">International Journal of Educational Research</h3>
-                        <p class="text-sm text-slate-600 mb-6 leading-relaxed">Dedicated to educational reform, curriculum design, teacher beliefs, and pedagogical strategies on a global scale.</p>
+                        <h3 class="text-xl font-bold font-serif text-white mb-3 group-hover:text-pressGold transition-colors">International Journal of Educational Research</h3>
+                        <p class="text-sm text-slate-400 mb-6 leading-relaxed">Dedicated to educational reform, curriculum design, teacher beliefs, and pedagogical strategies on a global scale.</p>
                     </div>
-                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <a href="#current-issue" class="text-schoolGreen text-sm font-semibold hover:text-[#FF1D58] inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                    <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                        <a href="#current-issue" class="text-pressGold text-sm font-semibold hover:text-[#FF1D58] inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                             Current Issue &rarr;
                         </a>
                         <span class="text-xs text-slate-500">Bimonthly</span>
                     </div>
                 </div>
 
-                <div class="w-80 sm:w-96 shrink-0 bg-white border-2 border-slate-200 rounded-3xl p-6 hover:border-schoolGreen hover:shadow-xl transition-all duration-300 flex flex-col justify-between group shadow-sm">
+                <div class="w-80 sm:w-96 shrink-0 bg-[#0B0F19] border-2 border-slate-800 rounded-3xl p-6 hover:border-pressGold hover:shadow-xl transition-all duration-300 flex flex-col justify-between group shadow-sm">
                     <div>
                         <div class="flex items-center justify-between mb-4">
                             <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-[#FF1D58] text-white shadow-sm">Open Access</span>
                             <span class="text-xs text-slate-500 font-mono">ISSN: 0360-1315</span>
                         </div>
-                        <h3 class="text-xl font-bold font-serif text-slate-900 mb-3 group-hover:text-schoolGreen transition-colors">Computers &amp; Education</h3>
-                        <p class="text-sm text-slate-600 mb-6 leading-relaxed">Explores educational technology, constructivist learning methodologies, and quantitative/mixed-methods analyses in instruction.</p>
+                        <h3 class="text-xl font-bold font-serif text-white mb-3 group-hover:text-pressGold transition-colors">Computers &amp; Education</h3>
+                        <p class="text-sm text-slate-400 mb-6 leading-relaxed">Explores educational technology, constructivist learning methodologies, and quantitative/mixed-methods analyses in instruction.</p>
                     </div>
-                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <a href="#current-issue" class="text-schoolGreen text-sm font-semibold hover:text-[#FF1D58] inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                    <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                        <a href="#current-issue" class="text-pressGold text-sm font-semibold hover:text-[#FF1D58] inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                             Current Issue &rarr;
                         </a>
                         <span class="text-xs text-slate-500">Monthly</span>
@@ -466,88 +444,88 @@
     </section>
 
     <!-- Catalog & Books Section -->
-    <section id="catalog" class="py-20 border-t border-slate-200 bg-slate-50 fade-in-section">
+    <section id="catalog" class="py-20 border-t border-slate-800 bg-[#0B0F19] fade-in-section">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
                 <div>
-                    <h2 class="text-3xl font-bold font-serif text-slate-900 mb-3">Catalog &amp; Monograph Books</h2>
-                    <p class="text-slate-600">Explore published conference proceedings, scholarly monographs, and edited academic volumes.</p>
+                    <h2 class="text-3xl font-bold font-serif text-white mb-3">Catalog &amp; Monograph Books</h2>
+                    <p class="text-slate-400">Explore published conference proceedings, scholarly monographs, and edited academic volumes.</p>
                 </div>
                 <div class="mt-4 md:mt-0">
-                    <a href="#contact" class="text-sm font-semibold text-schoolGreen hover:text-[#FF1D58] hover:underline">View complete archive &rarr;</a>
+                    <a href="#contact" class="text-sm font-semibold text-pressGold hover:text-[#FF1D58] hover:underline">View complete archive &rarr;</a>
                 </div>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Book 1 -->
-                <div class="bg-white border-2 border-slate-200 rounded-3xl p-5 hover:border-schoolGreen hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group shadow-sm">
-                    <div class="h-52 bg-gradient-to-br from-schoolGreen via-emerald-800 to-slate-900 rounded-2xl mb-4 p-4 flex flex-col justify-between text-white border border-emerald-300/40 shadow-md transition-transform group-hover:scale-[1.02] duration-300 relative overflow-hidden">
-                        <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-emerald-400/20 rounded-full blur-xl"></div>
+                <div class="bg-[#131B2E] border-2 border-slate-800 rounded-3xl p-5 hover:border-pressGold hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group shadow-sm">
+                    <div class="h-52 bg-gradient-to-br from-slate-900 via-slate-950 to-black rounded-2xl mb-4 p-4 flex flex-col justify-between text-white border border-yellow-600/30 shadow-md transition-transform group-hover:scale-[1.02] duration-300 relative overflow-hidden">
+                        <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-yellow-500/10 rounded-full blur-xl"></div>
                         <div>
-                            <span class="text-[9px] font-mono tracking-widest uppercase text-[#FFF685] font-semibold">PAP Press &bull; 2026</span>
+                            <span class="text-[9px] font-mono tracking-widest uppercase text-pressGold font-semibold">PAP Press &bull; 2026</span>
                             <h5 class="font-serif font-bold text-sm mt-2 text-slate-100 leading-tight">Modern Pedagogy &amp; Educational Leadership</h5>
                         </div>
-                        <div class="border-t border-emerald-400/30 pt-2 flex justify-between items-center text-[10px] text-slate-200">
+                        <div class="border-t border-slate-800 pt-2 flex justify-between items-center text-[10px] text-slate-400">
                             <span>Proceedings</span>
-                            <span class="text-emerald-300 font-mono">ISBN 978-1</span>
+                            <span class="text-pressGold font-mono">ISBN 978-1</span>
                         </div>
                     </div>
-                    <span class="text-xs text-schoolGreen font-semibold">Proceedings Series</span>
-                    <h4 class="font-serif font-bold text-slate-900 mt-1 mb-2">Modern Pedagogy &amp; Educational Leadership</h4>
+                    <span class="text-xs text-pressGold font-semibold">Proceedings Series</span>
+                    <h4 class="font-serif font-bold text-white mt-1 mb-2">Modern Pedagogy &amp; Educational Leadership</h4>
                     <p class="text-xs text-slate-500">Edited by Academic Board</p>
                 </div>
 
                 <!-- Book 2 -->
-                <div class="bg-white border-2 border-slate-200 rounded-3xl p-5 hover:border-schoolGreen hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group shadow-sm">
-                    <div class="h-52 bg-gradient-to-br from-schoolGreen via-slate-900 to-slate-900 rounded-2xl mb-4 p-4 flex flex-col justify-between text-white border border-emerald-300/40 shadow-md transition-transform group-hover:scale-[1.02] duration-300 relative overflow-hidden">
-                        <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-[#FF1D58]/20 rounded-full blur-xl"></div>
+                <div class="bg-[#131B2E] border-2 border-slate-800 rounded-3xl p-5 hover:border-pressGold hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group shadow-sm">
+                    <div class="h-52 bg-gradient-to-br from-slate-900 via-slate-950 to-black rounded-2xl mb-4 p-4 flex flex-col justify-between text-white border border-yellow-600/30 shadow-md transition-transform group-hover:scale-[1.02] duration-300 relative overflow-hidden">
+                        <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-[#FF1D58]/10 rounded-full blur-xl"></div>
                         <div>
-                            <span class="text-[9px] font-mono tracking-widest uppercase text-[#FFF685] font-semibold">Monograph Series</span>
+                            <span class="text-[9px] font-mono tracking-widest uppercase text-pressGold font-semibold">Monograph Series</span>
                             <h5 class="font-serif font-bold text-sm mt-2 text-slate-100 leading-tight">Psychological Resilience in Higher Education</h5>
                         </div>
-                        <div class="border-t border-slate-800 pt-2 flex justify-between items-center text-[10px] text-slate-200">
+                        <div class="border-t border-slate-800 pt-2 flex justify-between items-center text-[10px] text-slate-400">
                             <span>Dr. J. Dalimeg et al.</span>
-                            <span class="text-emerald-300 font-mono">ISBN 978-2</span>
+                            <span class="text-pressGold font-mono">ISBN 978-2</span>
                         </div>
                     </div>
-                    <span class="text-xs text-schoolGreen font-semibold">Monograph</span>
-                    <h4 class="font-serif font-bold text-slate-900 mt-1 mb-2">Psychological Resilience in Higher Education</h4>
+                    <span class="text-xs text-pressGold font-semibold">Monograph</span>
+                    <h4 class="font-serif font-bold text-white mt-1 mb-2">Psychological Resilience in Higher Education</h4>
                     <p class="text-xs text-slate-500">Dr. J. Dalimeg et al.</p>
                 </div>
 
                 <!-- Book 3 -->
-                <div class="bg-white border-2 border-slate-200 rounded-3xl p-5 hover:border-schoolGreen hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group shadow-sm">
-                    <div class="h-52 bg-gradient-to-br from-schoolGreen via-teal-950 to-slate-900 rounded-2xl mb-4 p-4 flex flex-col justify-between text-white border border-emerald-300/40 shadow-md transition-transform group-hover:scale-[1.02] duration-300 relative overflow-hidden">
-                        <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-emerald-400/20 rounded-full blur-xl"></div>
+                <div class="bg-[#131B2E] border-2 border-slate-800 rounded-3xl p-5 hover:border-pressGold hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group shadow-sm">
+                    <div class="h-52 bg-gradient-to-br from-slate-900 via-slate-950 to-black rounded-2xl mb-4 p-4 flex flex-col justify-between text-white border border-yellow-600/30 shadow-md transition-transform group-hover:scale-[1.02] duration-300 relative overflow-hidden">
+                        <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-yellow-500/10 rounded-full blur-xl"></div>
                         <div>
-                            <span class="text-[9px] font-mono tracking-widest uppercase text-[#FFF685] font-semibold">Research Volume</span>
+                            <span class="text-[9px] font-mono tracking-widest uppercase text-pressGold font-semibold">Research Volume</span>
                             <h5 class="font-serif font-bold text-sm mt-2 text-slate-100 leading-tight">Quantitative Methodologies &amp; PLS-SEM</h5>
                         </div>
-                        <div class="border-t border-slate-800 pt-2 flex justify-between items-center text-[10px] text-slate-200">
+                        <div class="border-t border-slate-800 pt-2 flex justify-between items-center text-[10px] text-slate-400">
                             <span>Advanced Stats</span>
-                            <span class="text-emerald-300 font-mono">ISBN 978-3</span>
+                            <span class="text-pressGold font-mono">ISBN 978-3</span>
                         </div>
                     </div>
-                    <span class="text-xs text-schoolGreen font-semibold">Research Volume</span>
-                    <h4 class="font-serif font-bold text-slate-900 mt-1 mb-2">Quantitative Methodologies &amp; PLS-SEM</h4>
+                    <span class="text-xs text-pressGold font-semibold">Research Volume</span>
+                    <h4 class="font-serif font-bold text-white mt-1 mb-2">Quantitative Methodologies &amp; PLS-SEM</h4>
                     <p class="text-xs text-slate-500">Research Publications</p>
                 </div>
 
                 <!-- Book 4 -->
-                <div class="bg-white border-2 border-slate-200 rounded-3xl p-5 hover:border-schoolGreen hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group shadow-sm">
-                    <div class="h-52 bg-gradient-to-br from-schoolGreen via-rose-950 to-slate-900 rounded-2xl mb-4 p-4 flex flex-col justify-between text-white border border-[#FF1D58]/40 shadow-md transition-transform group-hover:scale-[1.02] duration-300 relative overflow-hidden">
-                        <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-[#FF1D58]/20 rounded-full blur-xl"></div>
+                <div class="bg-[#131B2E] border-2 border-slate-800 rounded-3xl p-5 hover:border-pressGold hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group shadow-sm">
+                    <div class="h-52 bg-gradient-to-br from-slate-900 via-slate-950 to-black rounded-2xl mb-4 p-4 flex flex-col justify-between text-white border border-[#FF1D58]/30 shadow-md transition-transform group-hover:scale-[1.02] duration-300 relative overflow-hidden">
+                        <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-[#FF1D58]/10 rounded-full blur-xl"></div>
                         <div>
-                            <span class="text-[9px] font-mono tracking-widest uppercase text-[#FFF685] font-semibold">Conference Proceedings</span>
+                            <span class="text-[9px] font-mono tracking-widest uppercase text-pressGold font-semibold">Conference Proceedings</span>
                             <h5 class="font-serif font-bold text-sm mt-2 text-slate-100 leading-tight">Global Innovations in Social Sciences</h5>
                         </div>
-                        <div class="border-t border-slate-800 pt-2 flex justify-between items-center text-[10px] text-slate-200">
+                        <div class="border-t border-slate-800 pt-2 flex justify-between items-center text-[10px] text-slate-400">
                             <span>PAP Press</span>
-                            <span class="text-emerald-300 font-mono">ISBN 978-4</span>
+                            <span class="text-pressGold font-mono">ISBN 978-4</span>
                         </div>
                     </div>
-                    <span class="text-xs text-schoolGreen font-semibold">Conference Proceedings</span>
-                    <h4 class="font-serif font-bold text-slate-900 mt-1 mb-2">Global Innovations in Social Sciences</h4>
+                    <span class="text-xs text-pressGold font-semibold">Conference Proceedings</span>
+                    <h4 class="font-serif font-bold text-white mt-1 mb-2">Global Innovations in Social Sciences</h4>
                     <p class="text-xs text-slate-500">PAP Press</p>
                 </div>
             </div>
@@ -555,36 +533,36 @@
     </section>
 
     <!-- About Us Section -->
-    <section id="about" class="py-20 bg-white border-t border-slate-200 fade-in-section">
+    <section id="about" class="py-20 bg-[#131B2E] border-t border-slate-800 fade-in-section">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
-                    <span class="text-xs font-semibold px-3 py-1 rounded-full bg-emerald-100 text-schoolGreen border border-emerald-200">About Pinnacle Academic Press</span>
-                    <h2 class="text-3xl sm:text-4xl font-bold font-serif text-slate-900 mt-4 mb-6">Upholding the Highest Standards of Scholarly Publishing</h2>
-                    <p class="text-slate-600 mb-4 leading-relaxed">
+                    <span class="text-xs font-semibold px-3 py-1 rounded-full bg-yellow-500/10 text-pressGold border border-yellow-500/30">About Pinnacle Academic Press</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold font-serif text-white mt-4 mb-6">Upholding the Highest Standards of Scholarly Publishing</h2>
+                    <p class="text-slate-300 mb-4 leading-relaxed font-light">
                         Pinnacle Academic Press is a distinguished academic publisher dedicated to disseminating cutting-edge research through peer-reviewed journals, monographs, and conference proceedings. With a global perspective, we support advancements across education, healthcare, and the social sciences.
                     </p>
-                    <p class="text-slate-600 mb-8 leading-relaxed">
+                    <p class="text-slate-300 mb-8 leading-relaxed font-light">
                         We are committed to fostering robust intellectual exchange and innovation, serving as a trusted platform for international researchers, educators, and scholars to share impactful work that addresses complex global challenges.
                     </p>
-                    <div class="grid grid-cols-3 gap-6 pt-6 border-t border-slate-200">
+                    <div class="grid grid-cols-3 gap-6 pt-6 border-t border-slate-800">
                         <div>
-                            <span class="block text-2xl font-bold font-serif text-schoolGreen">Double-Blind</span>
-                            <span class="text-xs text-slate-500">Peer Review</span>
+                            <span class="block text-2xl font-bold font-serif text-pressGold">Double-Blind</span>
+                            <span class="text-xs text-slate-400">Peer Review</span>
                         </div>
                         <div>
-                            <span class="block text-2xl font-bold font-serif text-schoolGreen">Open Access</span>
-                            <span class="text-xs text-slate-500">Global Reach</span>
+                            <span class="block text-2xl font-bold font-serif text-pressGold">Open Access</span>
+                            <span class="text-xs text-slate-400">Global Reach</span>
                         </div>
                         <div>
-                            <span class="block text-2xl font-bold font-serif text-schoolGreen">Scopus / Index</span>
-                            <span class="text-xs text-slate-500">Indexed Standards</span>
+                            <span class="block text-2xl font-bold font-serif text-pressGold">Scopus / Index</span>
+                            <span class="text-xs text-slate-400">Indexed Standards</span>
                         </div>
                     </div>
                 </div>
-                <div class="bg-emerald-50/50 border-2 border-emerald-200 p-8 rounded-3xl relative shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <h3 class="text-xl font-bold font-serif text-slate-900 mb-4">Editorial Integrity &amp; Ethics</h3>
-                    <ul class="space-y-4 text-sm text-slate-600">
+                <div class="bg-[#0B0F19] border-2 border-slate-800 p-8 rounded-3xl relative shadow-xl hover:border-pressGold transition-colors duration-300">
+                    <h3 class="text-xl font-bold font-serif text-white mb-4">Editorial Integrity &amp; Ethics</h3>
+                    <ul class="space-y-4 text-sm text-slate-300 font-light">
                         <li class="flex items-start gap-3">
                             <span class="text-[#FF1D58] font-bold">&#10003;</span>
                             Strict adherence to COPE (Committee on Publication Ethics) guidelines.
@@ -608,216 +586,216 @@
     </section>
 
     <!-- Scrollable Peer Review Policy Section -->
-    <section id="peer-review-policy" class="py-20 bg-slate-50 border-t border-slate-200 fade-in-section">
+    <section id="peer-review-policy" class="py-20 bg-[#0B0F19] border-t border-slate-800 fade-in-section">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <span class="text-xs font-semibold px-3 py-1 rounded-full bg-emerald-100 text-schoolGreen border border-emerald-200">Editorial Standards</span>
-                <h2 class="text-3xl font-bold font-serif text-slate-900 mt-4 mb-3">Peer Review Policy</h2>
-                <p class="text-slate-600">Browse our comprehensive evaluation framework and guidelines below.</p>
+                <span class="text-xs font-semibold px-3 py-1 rounded-full bg-yellow-500/10 text-pressGold border border-yellow-500/30">Editorial Standards</span>
+                <h2 class="text-3xl font-bold font-serif text-white mt-4 mb-3">Peer Review Policy</h2>
+                <p class="text-slate-400">Browse our comprehensive evaluation framework and guidelines below.</p>
             </div>
 
             <!-- Scrollable Container Box -->
-            <div class="bg-white border-2 border-slate-200 rounded-3xl p-6 sm:p-10 shadow-sm max-h-[550px] overflow-y-auto custom-scrollbar space-y-10 text-slate-600">
+            <div class="bg-[#131B2E] border-2 border-slate-800 rounded-3xl p-6 sm:p-10 shadow-sm max-h-[550px] overflow-y-auto custom-scrollbar space-y-10 text-slate-300 font-light">
                 <!-- 1. Overview -->
                 <div>
-                    <h3 class="text-xl font-bold font-serif text-slate-900 mb-3">1. Overview of the Review Process</h3>
+                    <h3 class="text-xl font-bold font-serif text-white mb-3">1. Overview of the Review Process</h3>
                     <p class="mb-3">Pinnacle Academic Press is committed to maintaining the highest standards of academic integrity and scholarly excellence. All research articles submitted to this journal undergo a rigorous Double-Blind Peer-Review process.</p>
-                    <p class="font-semibold text-schoolGreen mb-2">Under this system:</p>
-                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600">
+                    <p class="font-semibold text-pressGold mb-2">Under this system:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-300">
                         <li>The reviewers do not know the identity of the authors.</li>
                         <li>The authors do not know the identity of the reviewers.</li>
                     </ul>
-                    <p class="mt-3 text-slate-600">This ensures an objective, unbiased, and fair evaluation of all manuscripts, free from institutional or personal prejudices.</p>
+                    <p class="mt-3 text-slate-300">This ensures an objective, unbiased, and fair evaluation of all manuscripts, free from institutional or personal prejudices.</p>
                 </div>
 
-                <hr class="border-slate-200">
+                <hr class="border-slate-800">
 
                 <!-- 2. Technical Screening -->
                 <div>
-                    <h3 class="text-xl font-bold font-serif text-slate-900 mb-3">2. Technical Screening (Initial Review)</h3>
+                    <h3 class="text-xl font-bold font-serif text-white mb-3">2. Technical Screening (Initial Review)</h3>
                     <p class="mb-3">Upon submission, the Managing Editor conducts a preliminary technical evaluation. Manuscripts may be rejected immediately at this stage if they:</p>
-                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600">
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-300">
                         <li>Fall outside the scope or aims of the journal.</li>
                         <li>Do not follow the mandated formatting standards (strictly utilizing the APA 7th Edition structure and an IMRAD format).</li>
                         <li>Exhibit a similarity index that exceeds the journal's strict plagiarism threshold via verification software (e.g., Turnitin).</li>
                         <li>Lack clear institutional ethical clearances or feature unresolved conflicts of interest.</li>
                     </ul>
-                    <p class="mt-3 text-slate-600">Manuscripts that clear the initial screening are assigned to an Editor, who forwards the anonymized file to a minimum of two (2) independent external experts in the matching field of study.</p>
+                    <p class="mt-3 text-slate-300">Manuscripts that clear the initial screening are assigned to an Editor, who forwards the anonymized file to a minimum of two (2) independent external experts in the matching field of study.</p>
                 </div>
 
-                <hr class="border-slate-200">
+                <hr class="border-slate-800">
 
                 <!-- 3. Policy on AI-Assisted Research -->
                 <div>
-                    <h3 class="text-xl font-bold font-serif text-slate-900 mb-3">3. Policy on AI-Assisted Research and Writing</h3>
+                    <h3 class="text-xl font-bold font-serif text-white mb-3">3. Policy on AI-Assisted Research and Writing</h3>
                     <p class="mb-3">To preserve academic authorship, transparency, and accountability, Pinnacle Academic Press enforces strict guidelines regarding Artificial Intelligence (AI):</p>
-                    <ul class="list-disc pl-5 space-y-2 text-slate-600">
-                        <li><strong class="text-slate-900">Authorship Restrictions:</strong> AI tools (such as Large Language Models or automated writing assistants) cannot be listed as an author or co-author under any circumstances.</li>
-                        <li><strong class="text-slate-900">Permitted Usage:</strong> Authors may utilize AI tools solely to improve the readability, language, grammar, or phrasing of their original manuscript.</li>
-                        <li><strong class="text-slate-900">Strict Prohibitions:</strong> AI tools must not be used to generate core research findings, interpret study data, design methodologies, or synthesize literature reviews.</li>
-                        <li><strong class="text-slate-900">Mandatory Disclosure:</strong> If AI tools were utilized during the manuscript's preparation, the authors must explicitly declare this in a dedicated "Declaration of AI Use" section before the References. Authors retain full accountability for the accuracy and originality of all content within their paper.</li>
+                    <ul class="list-disc pl-5 space-y-2 text-slate-300">
+                        <li><strong class="text-white">Authorship Restrictions:</strong> AI tools (such as Large Language Models or automated writing assistants) cannot be listed as an author or co-author under any circumstances.</li>
+                        <li><strong class="text-white">Permitted Usage:</strong> Authors may utilize AI tools solely to improve the readability, language, grammar, or phrasing of their original manuscript.</li>
+                        <li><strong class="text-white">Strict Prohibitions:</strong> AI tools must not be used to generate core research findings, interpret study data, design methodologies, or synthesize literature reviews.</li>
+                        <li><strong class="text-white">Mandatory Disclosure:</strong> If AI tools were utilized during the manuscript's preparation, the authors must explicitly declare this in a dedicated "Declaration of AI Use" section before the References. Authors retain full accountability for the accuracy and originality of all content within their paper.</li>
                     </ul>
                 </div>
 
-                <hr class="border-slate-200">
+                <hr class="border-slate-800">
 
                 <!-- 4. Reviewer Evaluation Criteria -->
                 <div>
-                    <h3 class="text-xl font-bold font-serif text-slate-900 mb-3">4. Reviewer Evaluation Criteria</h3>
+                    <h3 class="text-xl font-bold font-serif text-white mb-3">4. Reviewer Evaluation Criteria</h3>
                     <p class="mb-3">External reviewers evaluate the manuscript based on intellectual merit, methodological soundness, and contribution to the discipline. Reviewers are instructed to assess:</p>
-                    <ul class="list-disc pl-5 space-y-2 text-slate-600">
-                        <li><strong class="text-slate-900">Originality and Relevance:</strong> Does the paper introduce novel insights or frameworks to the existing literature?</li>
-                        <li><strong class="text-slate-900">Methodological Rigor:</strong> Is the research design appropriate? Are the qualitative, quantitative, or mixed-method data frameworks correctly applied and robust?</li>
-                        <li><strong class="text-slate-900">Ethical Compliance:</strong> Are human participant protections, institutional approvals, and ethical boundaries explicitly addressed?</li>
-                        <li><strong class="text-slate-900">Clarity and Coherence:</strong> Is the manuscript structured logically, with clear transitions between the introduction, methodology, data presentation, and discussion.</li>
+                    <ul class="list-disc pl-5 space-y-2 text-slate-300">
+                        <li><strong class="text-white">Originality and Relevance:</strong> Does the paper introduce novel insights or frameworks to the existing literature?</li>
+                        <li><strong class="text-white">Methodological Rigor:</strong> Is the research design appropriate? Are the qualitative, quantitative, or mixed-method data frameworks correctly applied and robust?</li>
+                        <li><strong class="text-white">Ethical Compliance:</strong> Are human participant protections, institutional approvals, and ethical boundaries explicitly addressed?</li>
+                        <li><strong class="text-white">Clarity and Coherence:</strong> Is the manuscript structured logically, with clear transitions between the introduction, methodology, data presentation, and discussion.</li>
                     </ul>
                 </div>
 
-                <hr class="border-slate-200">
+                <hr class="border-slate-800">
 
                 <!-- 5. Editorial Decisions -->
                 <div>
-                    <h3 class="text-xl font-bold font-serif text-slate-900 mb-3">5. Editorial Decisions</h3>
+                    <h3 class="text-xl font-bold font-serif text-white mb-3">5. Editorial Decisions</h3>
                     <p class="mb-3">Based on the detailed feedback and recommendations provided by the peer reviewers, the Editor makes one of the following decisions:</p>
-                    <ul class="list-disc pl-5 space-y-2 text-slate-600 mb-3">
-                        <li><strong class="text-slate-900">Accept As Is:</strong> The manuscript satisfies all criteria and is accepted for publication without any adjustments.</li>
-                        <li><strong class="text-slate-900">Accept with Minor Revisions:</strong> The paper is accepted in principle, pending minor modifications, formatting fixes, or minor textual clarifications.</li>
-                        <li><strong class="text-slate-900">Major Revisions (Revise and Resubmit):</strong> The paper requires substantial restructuring, deep theoretical revisions, or additional data verification. The revised manuscript will undergo a second round of evaluation.</li>
-                        <li><strong class="text-slate-900">Reject:</strong> The paper contains critical methodological flaws, fails to show incremental value, or fails to meet the journal's rigorous scientific standards.</li>
+                    <ul class="list-disc pl-5 space-y-2 text-slate-300 mb-3">
+                        <li><strong class="text-white">Accept As Is:</strong> The manuscript satisfies all criteria and is accepted for publication without any adjustments.</li>
+                        <li><strong class="text-white">Accept with Minor Revisions:</strong> The paper is accepted in principle, pending minor modifications, formatting fixes, or minor textual clarifications.</li>
+                        <li><strong class="text-white">Major Revisions (Revise and Resubmit):</strong> The paper requires substantial restructuring, deep theoretical revisions, or additional data verification. The revised manuscript will undergo a second round of evaluation.</li>
+                        <li><strong class="text-white">Reject:</strong> The paper contains critical methodological flaws, fails to show incremental value, or fails to meet the journal's rigorous scientific standards.</li>
                     </ul>
-                    <p class="text-slate-600">The final decision rests entirely with the Editorial Board. Authors receive comprehensive, constructive, and confidential feedback reports to help improve their work.</p>
+                    <p class="text-slate-300">The final decision rests entirely with the Editorial Board. Authors receive comprehensive, constructive, and confidential feedback reports to help improve their work.</p>
                 </div>
 
-                <hr class="border-slate-200">
+                <hr class="border-slate-800">
 
                 <!-- 6. Timeline and Accountability -->
                 <div>
-                    <h3 class="text-xl font-bold font-serif text-slate-900 mb-3">6. Timeline and Accountability</h3>
-                    <p class="text-slate-600">The journal values efficiency and strives to complete the initial round of peer review within 4 to 6 weeks from submission. Reviewers are expected to honor agreed deadlines and maintain absolute confidentiality regarding the manuscript's contents throughout the entire evaluation cycle.</p>
+                    <h3 class="text-xl font-bold font-serif text-white mb-3">6. Timeline and Accountability</h3>
+                    <p class="text-slate-300">The journal values efficiency and strives to complete the initial round of peer review within 4 to 6 weeks from submission. Reviewers are expected to honor agreed deadlines and maintain absolute confidentiality regarding the manuscript's contents throughout the entire evaluation cycle.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Indexing & Abstracting Section -->
-    <section id="indexing" class="py-20 bg-white border-t border-slate-200 fade-in-section">
+    <section id="indexing" class="py-20 bg-[#131B2E] border-t border-slate-800 fade-in-section">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-xs font-semibold px-3 py-1 rounded-full bg-emerald-100 text-schoolGreen border border-emerald-200">Global Visibility</span>
-                <h2 class="text-3xl font-bold font-serif text-slate-900 mt-4 mb-4">Indexing &amp; Abstracting</h2>
-                <p class="text-slate-600">Pinnacle Academic Press journals and published monographs are indexed, archived, and abstracted across leading international academic directories and repositories.</p>
+                <span class="text-xs font-semibold px-3 py-1 rounded-full bg-yellow-500/10 text-pressGold border border-yellow-500/30">Global Visibility</span>
+                <h2 class="text-3xl font-bold font-serif text-white mt-4 mb-4">Indexing &amp; Abstracting</h2>
+                <p class="text-slate-400">Pinnacle Academic Press journals and published monographs are indexed, archived, and abstracted across leading international academic directories and repositories.</p>
             </div>
 
             <!-- Complete Indexing Logos Grid -->
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
                 <!-- ISSN -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-schoolGreen hover:shadow-lg transition-all duration-300 group shadow-sm">
+                <div class="bg-[#0B0F19] border border-slate-800 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-pressGold hover:shadow-lg transition-all duration-300 group shadow-sm">
                     <span class="text-2xl font-black tracking-wider text-[#FF1D58] group-hover:scale-105 transition-transform">ISSN</span>
                     <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">International Standard Serial Number</span>
                 </div>
                 <!-- SSRN -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-schoolGreen hover:shadow-lg transition-all duration-300 group shadow-sm">
-                    <span class="text-xl font-serif font-bold text-schoolGreen tracking-tighter group-hover:scale-105 transition-transform">SSRN</span>
+                <div class="bg-[#0B0F19] border border-slate-800 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-pressGold hover:shadow-lg transition-all duration-300 group shadow-sm">
+                    <span class="text-xl font-serif font-bold text-pressGold tracking-tighter group-hover:scale-105 transition-transform">SSRN</span>
                     <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Social Science Research Network</span>
                 </div>
                 <!-- ResearchGate -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-schoolGreen hover:shadow-lg transition-all duration-300 group shadow-sm">
-                    <span class="text-lg font-serif font-bold text-white bg-schoolGreen px-3 py-1 rounded-md shadow-sm group-hover:scale-105 transition-transform">R<sup>G</sup></span>
+                <div class="bg-[#0B0F19] border border-slate-800 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-pressGold hover:shadow-lg transition-all duration-300 group shadow-sm">
+                    <span class="text-lg font-serif font-bold text-black bg-pressGold px-3 py-1 rounded-md shadow-sm group-hover:scale-105 transition-transform">R<sup>G</sup></span>
                     <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">ResearchGate Network</span>
                 </div>
                 <!-- Zenodo -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-schoolGreen hover:shadow-lg transition-all duration-300 group shadow-sm">
-                    <span class="text-xl font-bold bg-schoolGreen text-white px-3 py-1 rounded-md shadow-sm group-hover:scale-105 transition-transform">zenodo</span>
+                <div class="bg-[#0B0F19] border border-slate-800 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-pressGold hover:shadow-lg transition-all duration-300 group shadow-sm">
+                    <span class="text-xl font-bold bg-pressGold text-black px-3 py-1 rounded-md shadow-sm group-hover:scale-105 transition-transform">zenodo</span>
                     <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Zenodo Repository</span>
                 </div>
                 <!-- OpenAIRE -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-schoolGreen hover:shadow-lg transition-all duration-300 group shadow-sm">
-                    <span class="text-sm font-bold text-slate-900 flex items-center gap-1 group-hover:scale-105 transition-transform"><span class="text-[#FF1D58] text-base font-black">O+</span> OpenAIRE</span>
+                <div class="bg-[#0B0F19] border border-slate-800 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-pressGold hover:shadow-lg transition-all duration-300 group shadow-sm">
+                    <span class="text-sm font-bold text-white flex items-center gap-1 group-hover:scale-105 transition-transform"><span class="text-[#FF1D58] text-base font-black">O+</span> OpenAIRE</span>
                     <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Open Access Infrastructure</span>
                 </div>
                 <!-- Google Scholar -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-schoolGreen hover:shadow-lg transition-all duration-300 group shadow-sm">
-                    <span class="font-serif font-bold text-sm tracking-tight group-hover:scale-105 transition-transform"><span class="text-schoolGreen">G</span><span class="text-[#FF1D58]">o</span><span class="text-[#F75990]">o</span><span class="text-slate-900">g</span><span class="text-emerald-600">l</span><span class="text-[#FF1D58]">e</span> Scholar</span>
+                <div class="bg-[#0B0F19] border border-slate-800 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-pressGold hover:shadow-lg transition-all duration-300 group shadow-sm">
+                    <span class="font-serif font-bold text-sm tracking-tight group-hover:scale-105 transition-transform text-white"><span class="text-pressGold">G</span><span class="text-[#FF1D58]">o</span><span class="text-[#F75990]">o</span><span class="text-white">g</span><span class="text-yellow-400">l</span><span class="text-[#FF1D58]">e</span> Scholar</span>
                     <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Google Scholar Index</span>
                 </div>
                 <!-- ROAD -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-schoolGreen hover:shadow-lg transition-all duration-300 group shadow-sm">
+                <div class="bg-[#0B0F19] border border-slate-800 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-pressGold hover:shadow-lg transition-all duration-300 group shadow-sm">
                     <span class="text-xl font-black tracking-widest text-[#FF1D58] group-hover:scale-105 transition-transform">RO@D</span>
                     <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Directory of Open Access Scholarly Resources</span>
                 </div>
                 <!-- DOAJ -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-schoolGreen hover:shadow-lg transition-all duration-300 group shadow-sm">
-                    <span class="text-xl font-bold tracking-tight text-slate-900 flex items-center gap-1 group-hover:scale-105 transition-transform"><span class="flex gap-0.5"><span class="w-1.5 h-4 bg-[#FF1D58] rounded-sm"></span><span class="w-1.5 h-4 bg-[#F75990] rounded-sm"></span><span class="w-1.5 h-4 bg-amber-500 rounded-sm"></span></span> DOAJ</span>
+                <div class="bg-[#0B0F19] border border-slate-800 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-pressGold hover:shadow-lg transition-all duration-300 group shadow-sm">
+                    <span class="text-xl font-bold tracking-tight text-white flex items-center gap-1 group-hover:scale-105 transition-transform"><span class="flex gap-0.5"><span class="w-1.5 h-4 bg-[#FF1D58] rounded-sm"></span><span class="w-1.5 h-4 bg-[#F75990] rounded-sm"></span><span class="w-1.5 h-4 bg-amber-500 rounded-sm"></span></span> DOAJ</span>
                     <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Directory of Open Access Journals</span>
                 </div>
                 <!-- Crossref / DOI -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-schoolGreen hover:shadow-lg transition-all duration-300 group shadow-sm">
-                    <span class="text-xs font-bold text-slate-900 flex items-center gap-1 group-hover:scale-105 transition-transform">Crossref <span class="bg-[#FFF685] text-slate-900 px-1.5 py-0.5 rounded text-[10px] font-bold border border-amber-300">DOI</span></span>
+                <div class="bg-[#0B0F19] border border-slate-800 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-pressGold hover:shadow-lg transition-all duration-300 group shadow-sm">
+                    <span class="text-xs font-bold text-white flex items-center gap-1 group-hover:scale-105 transition-transform">Crossref <span class="bg-[#FFF685] text-slate-900 px-1.5 py-0.5 rounded text-[10px] font-bold border border-amber-300">DOI</span></span>
                     <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Official DOI Registration</span>
                 </div>
                 <!-- ASCI -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-schoolGreen hover:shadow-lg transition-all duration-300 group shadow-sm">
-                    <span class="text-lg font-serif font-bold text-schoolGreen tracking-wide group-hover:scale-105 transition-transform">ASCI</span>
+                <div class="bg-[#0B0F19] border border-slate-800 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-pressGold hover:shadow-lg transition-all duration-300 group shadow-sm">
+                    <span class="text-lg font-serif font-bold text-pressGold tracking-wide group-hover:scale-105 transition-transform">ASCI</span>
                     <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Asian Science Citation Index</span>
                 </div>
                 <!-- EuroPub -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-schoolGreen hover:shadow-lg transition-all duration-300 group shadow-sm">
-                    <span class="text-sm font-bold text-schoolGreen group-hover:scale-105 transition-transform">🌱 EuroPub</span>
+                <div class="bg-[#0B0F19] border border-slate-800 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-pressGold hover:shadow-lg transition-all duration-300 group shadow-sm">
+                    <span class="text-sm font-bold text-pressGold group-hover:scale-105 transition-transform">🌱 EuroPub</span>
                     <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Directory of Academic &amp; Scientific Journals</span>
                 </div>
                 <!-- SafetyLit -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-schoolGreen hover:shadow-lg transition-all duration-300 group shadow-sm">
-                    <span class="text-xs font-bold text-white bg-schoolGreen px-3 py-1.5 rounded-full group-hover:scale-105 transition-transform">SafetyLit</span>
+                <div class="bg-[#0B0F19] border border-slate-800 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-pressGold hover:shadow-lg transition-all duration-300 group shadow-sm">
+                    <span class="text-xs font-bold text-black bg-pressGold px-3 py-1.5 rounded-full group-hover:scale-105 transition-transform">SafetyLit</span>
                     <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Safety Literature Database</span>
                 </div>
                 <!-- Root Indexing -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-schoolGreen hover:shadow-lg transition-all duration-300 group shadow-sm">
-                    <span class="text-sm font-black tracking-tight text-slate-900 group-hover:scale-105 transition-transform"><span class="text-[#FF1D58]">ROOT</span>INDEXING</span>
+                <div class="bg-[#0B0F19] border border-slate-800 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-pressGold hover:shadow-lg transition-all duration-300 group shadow-sm">
+                    <span class="text-sm font-black tracking-tight text-white group-hover:scale-105 transition-transform"><span class="text-[#FF1D58]">ROOT</span>INDEXING</span>
                     <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Journal Abstracting &amp; Indexing Service</span>
                 </div>
                 <!-- WorldCat -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-schoolGreen hover:shadow-lg transition-all duration-300 group shadow-sm">
-                    <span class="text-base font-bold text-slate-900 group-hover:scale-105 transition-transform">🌐 WorldCat</span>
+                <div class="bg-[#0B0F19] border border-slate-800 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-pressGold hover:shadow-lg transition-all duration-300 group shadow-sm">
+                    <span class="text-base font-bold text-white group-hover:scale-105 transition-transform">🌐 WorldCat</span>
                     <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Global Library Catalog</span>
                 </div>
                 <!-- Scilit -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-schoolGreen hover:shadow-lg transition-all duration-300 group shadow-sm">
-                    <span class="text-lg font-bold text-schoolGreen group-hover:scale-105 transition-transform">Scilit</span>
+                <div class="bg-[#0B0F19] border border-slate-800 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-pressGold hover:shadow-lg transition-all duration-300 group shadow-sm">
+                    <span class="text-lg font-bold text-pressGold group-hover:scale-105 transition-transform">Scilit</span>
                     <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Scientific Literature Database</span>
                 </div>
                 <!-- Mendeley -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-schoolGreen hover:shadow-lg transition-all duration-300 group shadow-sm">
+                <div class="bg-[#0B0F19] border border-slate-800 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-pressGold hover:shadow-lg transition-all duration-300 group shadow-sm">
                     <span class="text-sm font-bold text-[#FF1D58] group-hover:scale-105 transition-transform">🔴 MENDELEY</span>
                     <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Research Reference Index</span>
                 </div>
                 <!-- Dimensions -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-schoolGreen hover:shadow-lg transition-all duration-300 group shadow-sm">
-                    <span class="text-base font-bold text-slate-900 flex items-center gap-1 group-hover:scale-105 transition-transform"><span class="w-2.5 h-2.5 bg-schoolGreen rounded-sm"></span> Dimensions</span>
+                <div class="bg-[#0B0F19] border border-slate-800 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-pressGold hover:shadow-lg transition-all duration-300 group shadow-sm">
+                    <span class="text-base font-bold text-white flex items-center gap-1 group-hover:scale-105 transition-transform"><span class="w-2.5 h-2.5 bg-pressGold rounded-sm"></span> Dimensions</span>
                     <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Linked Research Data</span>
                 </div>
                 <!-- ISBN -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-schoolGreen hover:shadow-lg transition-all duration-300 group shadow-sm">
-                    <span class="text-lg font-extrabold text-schoolGreen tracking-tighter bg-slate-200 px-3 py-1 rounded group-hover:scale-105 transition-transform">isbn</span>
+                <div class="bg-[#0B0F19] border border-slate-800 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-pressGold hover:shadow-lg transition-all duration-300 group shadow-sm">
+                    <span class="text-lg font-extrabold text-pressGold tracking-tighter bg-slate-800 px-3 py-1 rounded group-hover:scale-105 transition-transform">isbn</span>
                     <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Standard Book Number Index</span>
                 </div>
                 <!-- Scribd -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-schoolGreen hover:shadow-lg transition-all duration-300 group shadow-sm">
-                    <span class="text-sm font-bold text-slate-900 tracking-wider group-hover:scale-105 transition-transform">SCRIBD</span>
+                <div class="bg-[#0B0F19] border border-slate-800 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-pressGold hover:shadow-lg transition-all duration-300 group shadow-sm">
+                    <span class="text-sm font-bold text-white tracking-wider group-hover:scale-105 transition-transform">SCRIBD</span>
                     <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Digital Library Repository</span>
                 </div>
                 <!-- Academia.edu -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-schoolGreen hover:shadow-lg transition-all duration-300 group shadow-sm">
-                    <span class="text-xs font-bold text-white bg-schoolGreen px-2.5 py-1 rounded group-hover:scale-105 transition-transform">Academia.edu</span>
+                <div class="bg-[#0B0F19] border border-slate-800 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-pressGold hover:shadow-lg transition-all duration-300 group shadow-sm">
+                    <span class="text-xs font-bold text-black bg-pressGold px-2.5 py-1 rounded group-hover:scale-105 transition-transform">Academia.edu</span>
                     <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Scholarly Sharing Network</span>
                 </div>
                 <!-- Index Copernicus -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-schoolGreen hover:shadow-lg transition-all duration-300 group shadow-sm">
-                    <span class="text-[11px] font-bold text-slate-800 text-center group-hover:scale-105 transition-transform">INDEX COPERNICUS</span>
+                <div class="bg-[#0B0F19] border border-slate-800 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-pressGold hover:shadow-lg transition-all duration-300 group shadow-sm">
+                    <span class="text-[11px] font-bold text-slate-200 text-center group-hover:scale-105 transition-transform">INDEX COPERNICUS</span>
                     <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">International Database</span>
                 </div>
                 <!-- CiteFactor -->
-                <div class="bg-slate-50 border border-slate-200 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-schoolGreen hover:shadow-lg transition-all duration-300 group shadow-sm sm:col-span-2 lg:col-span-1">
-                    <span class="text-sm font-bold text-schoolGreen group-hover:scale-105 transition-transform">CiteFactor</span>
+                <div class="bg-[#0B0F19] border border-slate-800 p-5 rounded-3xl flex flex-col items-center justify-center hover:border-pressGold hover:shadow-lg transition-all duration-300 group shadow-sm sm:col-span-2 lg:col-span-1">
+                    <span class="text-sm font-bold text-pressGold group-hover:scale-105 transition-transform">CiteFactor</span>
                     <span class="text-[11px] text-slate-500 mt-2 font-medium text-center">Academic Scientific Journals</span>
                 </div>
             </div>
@@ -825,54 +803,54 @@
     </section>
 
     <!-- Submissions Section -->
-    <section id="submissions" class="py-20 border-t border-slate-200 bg-slate-50 fade-in-section">
+    <section id="submissions" class="py-20 border-t border-slate-800 bg-[#0B0F19] fade-in-section">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-3xl mx-auto text-center mb-16">
-                <h2 class="text-3xl font-bold font-serif text-slate-900 mb-4">Submit Your Manuscript</h2>
-                <p class="text-slate-600">We welcome original research papers, review articles, and conceptual studies aligned with our journal scopes.</p>
+                <h2 class="text-3xl font-bold font-serif text-white mb-4">Submit Your Manuscript</h2>
+                <p class="text-slate-400">We welcome original research papers, review articles, and conceptual studies aligned with our journal scopes.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-                <div class="bg-white border-2 border-slate-200 p-6 rounded-3xl text-center shadow-sm hover:border-schoolGreen transition-colors">
-                    <div class="w-12 h-12 bg-schoolGreen text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold shadow-sm">1</div>
-                    <h3 class="font-bold text-slate-900 mb-2">Prepare Manuscript</h3>
-                    <p class="text-sm text-slate-600">Format your paper according to APA style guidelines and ensure anonymized review files.</p>
+                <div class="bg-[#131B2E] border-2 border-slate-800 p-6 rounded-3xl text-center shadow-sm hover:border-pressGold transition-colors">
+                    <div class="w-12 h-12 bg-pressGold text-black rounded-full flex items-center justify-center mx-auto mb-4 font-bold shadow-sm">1</div>
+                    <h3 class="font-bold text-white mb-2">Prepare Manuscript</h3>
+                    <p class="text-sm text-slate-400">Format your paper according to APA style guidelines and ensure anonymized review files.</p>
                 </div>
-                <div class="bg-white border-2 border-slate-200 p-6 rounded-3xl text-center shadow-sm hover:border-schoolGreen transition-colors">
-                    <div class="w-12 h-12 bg-schoolGreen text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold shadow-sm">2</div>
-                    <h3 class="font-bold text-slate-900 mb-2">Online Submission</h3>
-                    <p class="text-sm text-slate-600">Submit your work through our secure editorial management portal or via email.</p>
+                <div class="bg-[#131B2E] border-2 border-slate-800 p-6 rounded-3xl text-center shadow-sm hover:border-pressGold transition-colors">
+                    <div class="w-12 h-12 bg-pressGold text-black rounded-full flex items-center justify-center mx-auto mb-4 font-bold shadow-sm">2</div>
+                    <h3 class="font-bold text-white mb-2">Online Submission</h3>
+                    <p class="text-sm text-slate-400">Submit your work through our secure editorial management portal or via email.</p>
                 </div>
-                <div class="bg-white border-2 border-slate-200 p-6 rounded-3xl text-center shadow-sm hover:border-schoolGreen transition-colors">
-                    <div class="w-12 h-12 bg-schoolGreen text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold shadow-sm">3</div>
-                    <h3 class="font-bold text-slate-900 mb-2">Peer Review &amp; Publication</h3>
-                    <p class="text-sm text-slate-600">Receive constructive feedback from expert reviewers and publish in our open-access issues.</p>
+                <div class="bg-[#131B2E] border-2 border-slate-800 p-6 rounded-3xl text-center shadow-sm hover:border-pressGold transition-colors">
+                    <div class="w-12 h-12 bg-pressGold text-black rounded-full flex items-center justify-center mx-auto mb-4 font-bold shadow-sm">3</div>
+                    <h3 class="font-bold text-white mb-2">Peer Review &amp; Publication</h3>
+                    <p class="text-sm text-slate-400">Receive constructive feedback from expert reviewers and publish in our open-access issues.</p>
                 </div>
             </div>
 
-            <div class="bg-white border-2 border-emerald-300 rounded-3xl p-8 lg:p-12 max-w-4xl mx-auto shadow-sm">
-                <h3 class="text-2xl font-bold font-serif text-slate-900 mb-6 text-center">Manuscript Submission Portal</h3>
+            <div class="bg-[#131B2E] border-2 border-yellow-600/40 rounded-3xl p-8 lg:p-12 max-w-4xl mx-auto shadow-sm">
+                <h3 class="text-2xl font-bold font-serif text-white mb-6 text-center">Manuscript Submission Portal</h3>
                 <form class="space-y-6" onsubmit="event.preventDefault(); alert('Submission inquiry received successfully!');">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                            <label class="block text-sm font-medium text-slate-700 mb-2">Corresponding Author Name</label>
-                            <input type="text" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-slate-900 focus:outline-none focus:border-schoolGreen transition-colors" placeholder="Dr. Jane Doe">
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Corresponding Author Name</label>
+                            <input type="text" required class="w-full bg-[#0B0F19] border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-pressGold transition-colors" placeholder="Dr. Jane Doe">
                         </div>
                         <div>
-                            <label class="block text-sm font-medium text-slate-700 mb-2">Email Address</label>
-                            <input type="email" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-slate-900 focus:outline-none focus:border-schoolGreen transition-colors" placeholder="author@institution.edu">
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Email Address</label>
+                            <input type="email" required class="w-full bg-[#0B0F19] border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-pressGold transition-colors" placeholder="author@institution.edu">
                         </div>
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-slate-700 mb-2">Manuscript Title</label>
-                        <input type="text" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-slate-900 focus:outline-none focus:border-schoolGreen transition-colors" placeholder="Enter paper title">
+                        <label class="block text-sm font-medium text-slate-300 mb-2">Manuscript Title</label>
+                        <input type="text" required class="w-full bg-[#0B0F19] border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-pressGold transition-colors" placeholder="Enter paper title">
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-slate-700 mb-2">Inquiry Message</label>
-                        <textarea rows="4" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-slate-900 focus:outline-none focus:border-schoolGreen transition-colors" placeholder="Type your inquiry message here..."></textarea>
+                        <label class="block text-sm font-medium text-slate-300 mb-2">Inquiry Message</label>
+                        <textarea rows="4" required class="w-full bg-[#0B0F19] border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-pressGold transition-colors" placeholder="Type your inquiry message here..."></textarea>
                     </div>
                     <div class="text-center">
-                        <button type="submit" class="px-8 py-3.5 bg-schoolGreen text-white font-bold rounded-full hover:bg-emerald-700 hover:scale-105 active:scale-95 transition-all duration-200 shadow-lg shadow-emerald-600/20">
+                        <button type="submit" class="px-8 py-3.5 bg-gradient-to-r from-pressGold to-yellow-600 text-black font-bold rounded-full hover:scale-105 active:scale-95 transition-all duration-200 shadow-lg shadow-yellow-600/20">
                             Submit Manuscript Inquiry
                         </button>
                     </div>
@@ -882,38 +860,38 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-white border-t border-slate-200 fade-in-section">
+    <section id="contact" class="py-20 bg-[#131B2E] border-t border-slate-800 fade-in-section">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-2xl mx-auto text-center mb-16">
-                <h2 class="text-3xl font-bold font-serif text-slate-900 mb-4">Editorial Office &amp; Contact</h2>
-                <p class="text-slate-600">Get in touch with our editorial board or publishing support team.</p>
+                <h2 class="text-3xl font-bold font-serif text-white mb-4">Editorial Office &amp; Contact</h2>
+                <p class="text-slate-400">Get in touch with our editorial board or publishing support team.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto text-center">
-                <div class="bg-slate-50 border border-slate-200 p-6 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
-                    <h3 class="font-bold text-schoolGreen mb-2">Editorial Inquiries</h3>
-                    <p class="text-sm text-slate-600">editor@pinnaclepubs.com</p>
+                <div class="bg-[#0B0F19] border border-slate-800 p-6 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="font-bold text-pressGold mb-2">Editorial Inquiries</h3>
+                    <p class="text-sm text-slate-400">editor@pinnaclepubs.com</p>
                 </div>
-                <div class="bg-slate-50 border border-slate-200 p-6 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
-                    <h3 class="font-bold text-schoolGreen mb-2">Support &amp; Assistance</h3>
-                    <p class="text-sm text-slate-600">editorpinnaclepubs@gmail.com</p>
+                <div class="bg-[#0B0F19] border border-slate-800 p-6 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="font-bold text-pressGold mb-2">Support &amp; Assistance</h3>
+                    <p class="text-sm text-slate-400">editorpinnaclepubs@gmail.com</p>
                 </div>
-                <div class="bg-slate-50 border border-slate-200 p-6 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
-                    <h3 class="font-bold text-schoolGreen mb-2">Office Location</h3>
-                    <p class="text-sm text-slate-600">International Scholarly Hub</p>
+                <div class="bg-[#0B0F19] border border-slate-800 p-6 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="font-bold text-pressGold mb-2">Office Location</h3>
+                    <p class="text-sm text-slate-400">International Scholarly Hub</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer (Emerald Green Background) -->
-    <footer class="bg-schoolGreen text-slate-100 py-12 text-sm border-t-4 border-emerald-400">
+    <!-- Footer -->
+    <footer class="bg-[#0B0F19] text-slate-400 py-12 text-sm border-t-4 border-pressGold">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="flex items-center space-x-3">
-                <div class="w-10 h-10 rounded-2xl overflow-hidden flex items-center justify-center bg-emerald-800 border border-emerald-300 p-1 scene-3d">
+                <div class="w-10 h-10 rounded-2xl overflow-hidden flex items-center justify-center bg-slate-900 border border-yellow-600/40 p-1 scene-3d">
                     <svg viewBox="0 0 100 100" class="w-full h-full animate-3d-logo" xmlns="http://www.w3.org/2000/svg">
                         <polygon points="10,90 35,35 45,75" fill="url(#gradRed)" opacity="0.95"/>
                         <polygon points="10,90 45,75 25,95" fill="#880022" opacity="0.9"/>
-                        <polygon points="25,95 45,75 60,60 55,95" fill="url(#gradCyan)" opacity="0.95"/>
+                        <polygon points="25,95 45,75 60,60 55,95" fill="url(#gradGold)" opacity="0.95"/>
                         <polygon points="55,10 85,55 60,60" fill="url(#gradPink)" opacity="0.9"/>
                         <polygon points="85,55 90,90 55,95 60,60" fill="#991133" opacity="0.95"/>
                         <polygon points="55,10 60,60 45,45" fill="#FFF685" opacity="0.7"/>
@@ -925,9 +903,9 @@
                 <p>&copy; 2026 Pinnacle Academic Press. All rights reserved. Open Access under Creative Commons License.</p>
             </div>
             <div class="flex space-x-6">
-                <a href="#home" class="hover:text-emerald-200 transition-colors">Privacy Policy</a>
-                <a href="#home" class="hover:text-emerald-200 transition-colors">Terms of Use</a>
-                <a href="#home" class="hover:text-emerald-200 transition-colors">Ethics Policy</a>
+                <a href="#home" class="hover:text-pressGold transition-colors">Privacy Policy</a>
+                <a href="#home" class="hover:text-pressGold transition-colors">Terms of Use</a>
+                <a href="#home" class="hover:text-pressGold transition-colors">Ethics Policy</a>
             </div>
         </div>
     </footer>
@@ -936,29 +914,29 @@
     <div class="fixed bottom-6 right-6 z-50">
         <button id="ai-chat-btn" class="w-24 h-28 bg-transparent border-0 shadow-none flex flex-col items-center justify-center hover:scale-110 transition-all duration-300 focus:outline-none group relative cursor-pointer p-0">
             <svg viewBox="0 0 80 100" class="w-20 h-24 animate-full-robot">
-                <line x1="40" y1="20" x2="40" y2="8" stroke="#059669" stroke-width="3.5" stroke-linecap="round"/>
+                <line x1="40" y1="20" x2="40" y2="8" stroke="#D4AF37" stroke-width="3.5" stroke-linecap="round"/>
                 <circle cx="40" cy="5" r="4" fill="#FF1D58" class="antenna-light"/>
                 
-                <rect x="20" y="18" width="40" height="30" rx="7" fill="#059669" stroke="#34D399" stroke-width="2.5"/>
-                <rect x="14" y="26" width="6" height="12" rx="2" fill="#047857" stroke="#34D399" stroke-width="1.5"/>
-                <rect x="60" y="26" width="6" height="12" rx="2" fill="#047857" stroke="#34D399" stroke-width="1.5"/>
-                <circle cx="30" cy="31" r="4" fill="#34D399" class="robot-eye"/>
-                <circle cx="50" cy="31" r="4" fill="#34D399" class="robot-eye"/>
+                <rect x="20" y="18" width="40" height="30" rx="7" fill="#131B2E" stroke="#D4AF37" stroke-width="2.5"/>
+                <rect x="14" y="26" width="6" height="12" rx="2" fill="#0B0F19" stroke="#D4AF37" stroke-width="1.5"/>
+                <rect x="60" y="26" width="6" height="12" rx="2" fill="#0B0F19" stroke="#D4AF37" stroke-width="1.5"/>
+                <circle cx="30" cy="31" r="4" fill="#D4AF37" class="robot-eye"/>
+                <circle cx="50" cy="31" r="4" fill="#D4AF37" class="robot-eye"/>
                 <circle cx="31" cy="30" r="1.5" fill="#ffffff"/>
                 <circle cx="51" cy="30" r="1.5" fill="#ffffff"/>
                 <rect id="robot-btn-mouth" x="32" y="40" width="16" height="3.5" rx="1.5" fill="#FFF685"/>
 
-                <rect x="37" y="48" width="6" height="7" fill="#047857"/>
+                <rect x="37" y="48" width="6" height="7" fill="#0B0F19"/>
 
-                <rect x="6" y="58" width="12" height="24" rx="5" fill="#047857" stroke="#34D399" stroke-width="2" class="robot-arm-waving"/>
-                <rect x="62" y="58" width="12" height="24" rx="5" fill="#047857" stroke="#34D399" stroke-width="2"/>
-                <rect x="18" y="53" width="44" height="32" rx="7" fill="#059669" stroke="#34D399" stroke-width="2.5"/>
+                <rect x="6" y="58" width="12" height="24" rx="5" fill="#0B0F19" stroke="#D4AF37" stroke-width="2" class="robot-arm-waving"/>
+                <rect x="62" y="58" width="12" height="24" rx="5" fill="#0B0F19" stroke="#D4AF37" stroke-width="2"/>
+                <rect x="18" y="53" width="44" height="32" rx="7" fill="#131B2E" stroke="#D4AF37" stroke-width="2.5"/>
                 
                 <circle cx="40" cy="69" r="7" fill="#FF1D58" class="antenna-light"/>
                 <circle cx="40" cy="69" r="3.5" fill="#FFF685"/>
 
-                <rect x="25" y="83" width="9" height="14" rx="3.5" fill="#047857" stroke="#34D399" stroke-width="1.5"/>
-                <rect x="46" y="83" width="9" height="14" rx="3.5" fill="#047857" stroke="#34D399" stroke-width="1.5"/>
+                <rect x="25" y="83" width="9" height="14" rx="3.5" fill="#0B0F19" stroke="#D4AF37" stroke-width="1.5"/>
+                <rect x="46" y="83" width="9" height="14" rx="3.5" fill="#0B0F19" stroke="#D4AF37" stroke-width="1.5"/>
             </svg>
             <span class="absolute top-2 right-2 flex h-3.5 w-3.5">
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FF1D58] opacity-75"></span>
@@ -967,51 +945,51 @@
         </button>
 
         <!-- Chat Window Modal -->
-        <div id="ai-chat-window" class="hidden absolute bottom-32 right-0 w-80 sm:w-96 bg-white border-2 border-schoolGreen rounded-3xl shadow-2xl overflow-hidden flex flex-col transition-all duration-300">
-            <div class="bg-schoolGreen text-white px-4 py-3 flex items-center justify-between border-b border-emerald-400">
+        <div id="ai-chat-window" class="hidden absolute bottom-32 right-0 w-80 sm:w-96 bg-[#131B2E] border-2 border-pressGold rounded-3xl shadow-2xl overflow-hidden flex flex-col transition-all duration-300">
+            <div class="bg-[#0B0F19] text-white px-4 py-3 flex items-center justify-between border-b border-yellow-600/40">
                 <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 rounded-2xl bg-emerald-800 border border-emerald-300 flex items-center justify-center relative overflow-hidden p-1">
+                    <div class="w-10 h-10 rounded-2xl bg-slate-900 border border-yellow-600/40 flex items-center justify-center relative overflow-hidden p-1">
                         <svg viewBox="0 0 80 100" class="w-8 h-9 animate-full-robot">
-                            <line x1="40" y1="20" x2="40" y2="8" stroke="#34D399" stroke-width="3" stroke-linecap="round"/>
+                            <line x1="40" y1="20" x2="40" y2="8" stroke="#D4AF37" stroke-width="3" stroke-linecap="round"/>
                             <circle cx="40" cy="6" r="3.5" fill="#FF1D58" class="antenna-light"/>
-                            <rect x="22" y="20" width="36" height="28" rx="6" fill="#059669"/>
-                            <circle cx="31" cy="31" r="3.5" fill="#34D399" class="robot-eye"/>
-                            <circle cx="49" cy="31" r="3.5" fill="#34D399" class="robot-eye"/>
+                            <rect x="22" y="20" width="36" height="28" rx="6" fill="#131B2E"/>
+                            <circle cx="31" cy="31" r="3.5" fill="#D4AF37" class="robot-eye"/>
+                            <circle cx="49" cy="31" r="3.5" fill="#D4AF37" class="robot-eye"/>
                             <rect id="robot-avatar-mouth" x="33" y="40" width="14" height="3" rx="1.5" fill="#FFF685"/>
-                            <rect x="37" y="48" width="6" height="6" fill="#047857"/>
-                            <rect x="10" y="58" width="10" height="22" rx="4" fill="#047857" class="robot-arm-waving"/>
-                            <rect x="60" y="58" width="10" height="22" rx="4" fill="#047857"/>
-                            <rect x="20" y="54" width="40" height="30" rx="6" fill="#059669"/>
+                            <rect x="37" y="48" width="6" height="6" fill="#0B0F19"/>
+                            <rect x="10" y="58" width="10" height="22" rx="4" fill="#0B0F19" class="robot-arm-waving"/>
+                            <rect x="60" y="58" width="10" height="22" rx="4" fill="#0B0F19"/>
+                            <rect x="20" y="54" width="40" height="30" rx="6" fill="#131B2E"/>
                             <circle cx="40" cy="69" r="6" fill="#FF1D58" class="antenna-light"/>
                         </svg>
                     </div>
                     <div>
-                        <span class="font-serif font-bold text-sm block">PAP-Bot (AI Assistant)</span>
-                        <span id="robot-status" class="text-[10px] text-emerald-200 font-medium">Ready to speak</span>
+                        <span class="font-serif font-bold text-sm block text-white">PAP-Bot (AI Assistant)</span>
+                        <span id="robot-status" class="text-[10px] text-yellow-300 font-medium">Ready to speak</span>
                     </div>
                 </div>
-                <button id="ai-close-btn" class="text-emerald-100 hover:text-white transition-colors">
+                <button id="ai-close-btn" class="text-slate-400 hover:text-white transition-colors">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
                     </svg>
                 </button>
             </div>
 
-            <div id="ai-messages" class="p-4 h-80 overflow-y-auto space-y-3 bg-slate-50 text-xs sm:text-sm custom-scrollbar flex flex-col">
-                <div class="bg-white border border-slate-200 p-3 rounded-2xl rounded-tl-sm shadow-sm max-w-[85%] self-start text-slate-700">
+            <div id="ai-messages" class="p-4 h-80 overflow-y-auto space-y-3 bg-[#0B0F19] text-xs sm:text-sm custom-scrollbar flex flex-col text-slate-300">
+                <div class="bg-[#131B2E] border border-slate-800 p-3 rounded-2xl rounded-tl-sm shadow-sm max-w-[85%] self-start text-slate-200">
                     Beep boop! 🤖 Hello! I am <strong>PAP-Bot</strong>, your robotic assistant for Pinnacle Academic Press. Ask me about our <strong>Current Issue</strong> research articles or publication standards!
                 </div>
             </div>
 
-            <div class="px-3 py-2 bg-white border-t border-slate-100 flex gap-1.5 overflow-x-auto text-[11px]">
-                <button onclick="sendQuickPrompt('Current issue articles')" class="px-2.5 py-1 bg-slate-100 hover:bg-emerald-100 hover:text-schoolGreen text-slate-600 rounded-lg whitespace-nowrap transition-colors">Current Issue?</button>
-                <button onclick="sendQuickPrompt('Peer review process')" class="px-2.5 py-1 bg-slate-100 hover:bg-emerald-100 hover:text-schoolGreen text-slate-600 rounded-lg whitespace-nowrap transition-colors">Peer Review?</button>
-                <button onclick="sendQuickPrompt('Indexing')" class="px-2.5 py-1 bg-slate-100 hover:bg-emerald-100 hover:text-schoolGreen text-slate-600 rounded-lg whitespace-nowrap transition-colors">Indexing</button>
+            <div class="px-3 py-2 bg-[#131B2E] border-t border-slate-800 flex gap-1.5 overflow-x-auto text-[11px]">
+                <button onclick="sendQuickPrompt('Current issue articles')" class="px-2.5 py-1 bg-[#0B0F19] hover:bg-yellow-500/10 hover:text-pressGold text-slate-300 rounded-lg whitespace-nowrap transition-colors border border-slate-800">Current Issue?</button>
+                <button onclick="sendQuickPrompt('Peer review process')" class="px-2.5 py-1 bg-[#0B0F19] hover:bg-yellow-500/10 hover:text-pressGold text-slate-300 rounded-lg whitespace-nowrap transition-colors border border-slate-800">Peer Review?</button>
+                <button onclick="sendQuickPrompt('Indexing')" class="px-2.5 py-1 bg-[#0B0F19] hover:bg-yellow-500/10 hover:text-pressGold text-slate-300 rounded-lg whitespace-nowrap transition-colors border border-slate-800">Indexing</button>
             </div>
 
-            <form id="ai-form" class="p-3 bg-white border-t border-slate-200 flex gap-2">
-                <input type="text" id="ai-input" placeholder="Type a message to PAP-Bot..." class="flex-1 bg-slate-100 border border-slate-300 rounded-xl px-3 py-2 text-xs sm:text-sm text-slate-900 focus:outline-none focus:border-schoolGreen transition-colors">
-                <button type="submit" class="bg-schoolGreen hover:bg-emerald-700 text-white px-3.5 py-2 rounded-xl text-xs font-bold transition-colors flex items-center gap-1 shadow-sm">
+            <form id="ai-form" class="p-3 bg-[#131B2E] border-t border-slate-800 flex gap-2">
+                <input type="text" id="ai-input" placeholder="Type a message to PAP-Bot..." class="flex-1 bg-[#0B0F19] border border-slate-700 rounded-xl px-3 py-2 text-xs sm:text-sm text-white focus:outline-none focus:border-pressGold transition-colors">
+                <button type="submit" class="bg-pressGold hover:bg-pressLightGold text-black px-3.5 py-2 rounded-xl text-xs font-bold transition-colors flex items-center gap-1 shadow-sm">
                     <span>Send</span>
                 </button>
             </form>
@@ -1020,13 +998,23 @@
 
     <!-- Scripts -->
     <script>
-        // ==========================================
-        // CONFIGURATION: CURRENT ISSUE PAPERS ARRAY
-        // ==========================================
         const currentIssuePapers = [
             {
                 journal: "Journal of Social Science and Education (JSSEE)",
-                badgeBg: "bg-[#059669] text-white",
+                badgeBg: "bg-pressGold text-black font-bold",
+                meta: "Published September 24, 2026 &bull; Version 1",
+                title: "QUIDTECH-CAPE: Quality Index Development for Integrated Technology Assessment: Enhancing Capstone Project Evaluation",
+                authors: "Authors: Alberto, Jonathan (Researcher)¹; Altura, Joel (Researcher)¹; Barnatia, Jerick (Researcher)¹; Figueroa, Vladimir (Project leader)¹; Reyes, Diosdado (Researcher)¹; Villanueva, Elizor (Editor)¹",
+                abstract: "This study develops and implements QUIDTECH-CAPE, a developmental research framework that integrates the ISO/IEC 25010 software quality model with the Technology Acceptance Model (TAM). Tested among 40 BSIT students and validated by 5 IT experts at Our Lady of the Sacred Heart College of Guimba, Inc., the framework establishes a standardized, 7-construct matrix to evaluate undergraduate capstone computing projects objectively while balancing technical software metrics with behavioral user-acceptance criteria.",
+                date: "Published: September 24, 2026",
+                indexStatus: "Zenodo Indexed",
+                url: "https://zenodo.org/records/22940748",
+                urlText: "View on Zenodo",
+                bgImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1600&auto=format&fit=crop"
+            },
+            {
+                journal: "Journal of Social Science and Education (JSSEE)",
+                badgeBg: "bg-pressGold text-black font-bold",
                 meta: "Published October 2, 2026 &bull; Version 1",
                 title: "Mental Well-Being Among Senior High School Learners: Basis for Contextualized Mental Health Initiative",
                 authors: "Author: Fabros, Jr., Reynaldo B. (Researcher)¹",
@@ -1034,7 +1022,8 @@
                 date: "Published: October 2, 2026",
                 indexStatus: "Zenodo Indexed",
                 url: "https://zenodo.org/records/23103988",
-                urlText: "View on Zenodo"
+                urlText: "View on Zenodo",
+                bgImage: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1600&auto=format&fit=crop"
             },
             {
                 journal: "International Journal of Educational Research",
@@ -1046,11 +1035,12 @@
                 date: "Published: September 2026",
                 indexStatus: "Zenodo Indexed",
                 url: "https://zenodo.org/records/22851910",
-                urlText: "View on Zenodo"
+                urlText: "View on Zenodo",
+                bgImage: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=1600&auto=format&fit=crop"
             },
             {
                 journal: "Journal of Social Science and Education (JSSEE)",
-                badgeBg: "bg-[#059669] text-white",
+                badgeBg: "bg-pressGold text-black font-bold",
                 meta: "Published September 23, 2026 &bull; Version 1",
                 title: "Social Media Usage as a way of Coping with the Stress of Young Adults Enrolled in Online Class during the Covid-19 Pandemic",
                 authors: "Authors: Garcia, Merylle Angela (Researcher)¹; Bakunawa, John Ace (Researcher)¹; Corpuz, John Paul (Researcher)¹; Marcelo, Sheena Marie (Researcher)¹; Paulo, Danielle Jae (Researcher)¹",
@@ -1058,11 +1048,12 @@
                 date: "Published: September 23, 2026",
                 indexStatus: "Zenodo Indexed",
                 url: "https://zenodo.org/records/22920950",
-                urlText: "View on Zenodo"
+                urlText: "View on Zenodo",
+                bgImage: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=1600&auto=format&fit=crop"
             },
             {
                 journal: "Journal of Social Science and Education (JSSEE)",
-                badgeBg: "bg-[#059669] text-white",
+                badgeBg: "bg-pressGold text-black font-bold",
                 meta: "Published September 22, 2026 &bull; Version 1",
                 title: "MONIFIRE: Fire Monitoring System with CCTV Camera and Alert Notification, an Arduino Uno Prototype Project",
                 authors: "Authors: Aguda, Kimberly Rose (Project member)¹; Bacsa, Jeynard (Project member)¹; Barnatia, Jerick (Editor)²; Galapon, Nicole Faye (Data manager)¹; Ponce, Franieboy (Project member)¹; Sacman, Kim Harold (Project member)¹; Sarmiento, James Erwin (Project member)¹; Villanueva, Elizor (Supervisor)¹",
@@ -1070,23 +1061,12 @@
                 date: "Published: September 22, 2026",
                 indexStatus: "Zenodo Indexed",
                 url: "https://zenodo.org/records/22896891",
-                urlText: "View on Zenodo"
+                urlText: "View on Zenodo",
+                bgImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600&auto=format&fit=crop"
             },
             {
                 journal: "Journal of Social Science and Education (JSSEE)",
-                badgeBg: "bg-[#059669] text-white",
-                meta: "Published September 24, 2026 &bull; Version 1",
-                title: "QUIDTECH-CAPE: Quality Index Development for Integrated Technology Assessment: Enhancing Capstone Project Evaluation",
-                authors: "Authors: Alberto, Jonathan (Researcher)¹; Altura, Joel (Researcher)¹; Barnatia, Jerick (Researcher)¹; Figueroa, Vladimir (Project leader)¹; Reyes, Diosdado (Researcher)¹; Villanueva, Elizor (Editor)¹",
-                abstract: "This study develops and implements QUIDTECH-CAPE, a developmental research framework that integrates the ISO/IEC 25010 software quality model with the Technology Acceptance Model (TAM). Tested among 40 BSIT students and validated by 5 IT experts at Our Lady of the Sacred Heart College of Guimba, Inc., the framework establishes a standardized, 7-construct matrix to evaluate undergraduate capstone computing projects objectively while balancing technical software metrics with behavioral user-acceptance criteria.",
-                date: "Published: September 24, 2026",
-                indexStatus: "Zenodo Indexed",
-                url: "https://zenodo.org/records/22940748",
-                urlText: "View on Zenodo"
-            },
-            {
-                journal: "Journal of Social Science and Education (JSSEE)",
-                badgeBg: "bg-[#059669] text-white",
+                badgeBg: "bg-pressGold text-black font-bold",
                 meta: "Published September 24, 2026 &bull; Version 1",
                 title: "A Correlational Study on Facebook's Effect on the Self-Esteem of Senior High School Students in Adamson University",
                 authors: "Authors: Bernales, Jack (Researcher)¹; Bulawan, Bernardo (Researcher)¹; Jugo, Laurice Razel (Researcher)¹; Miguel, Sean Carlo (Researcher)¹; Naiven, Kathrin (Researcher)¹; Tolentino, Melanie Joyce (Researcher)¹",
@@ -1094,7 +1074,8 @@
                 date: "Published: September 24, 2026",
                 indexStatus: "Zenodo Indexed",
                 url: "https://zenodo.org/records/22943427",
-                urlText: "View on Zenodo"
+                urlText: "View on Zenodo",
+                bgImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600&auto=format&fit=crop"
             },
             {
                 journal: "North American Journal of Psychology",
@@ -1106,7 +1087,8 @@
                 date: "Published: August 2026",
                 indexStatus: "Zenodo Indexed",
                 url: "https://zenodo.org/records/22943427",
-                urlText: "View on Zenodo"
+                urlText: "View on Zenodo",
+                bgImage: "https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=1600&auto=format&fit=crop"
             }
         ];
 
@@ -1114,27 +1096,32 @@
             const container = document.getElementById('papers-container');
             if (!container) return;
             container.innerHTML = currentIssuePapers.map(paper => `
-                <div class="bg-white border-2 border-slate-200 rounded-3xl p-6 sm:p-8 hover:border-schoolGreen hover:shadow-xl transition-all duration-300 group shadow-sm">
-                    <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-                        <span class="text-xs font-semibold px-2.5 py-1 rounded ${paper.badgeBg}">${paper.journal}</span>
-                        <span class="text-xs text-slate-500 font-mono">${paper.meta}</span>
-                    </div>
-                    <h3 class="text-xl font-bold font-serif text-slate-900 mb-3 group-hover:text-schoolGreen transition-colors">
-                        ${paper.title}
-                    </h3>
-                    <p class="text-xs text-slate-500 mb-4 font-medium">${paper.authors}</p>
-                    <p class="text-sm text-slate-600 mb-6 leading-relaxed">
-                        <strong>Abstract:</strong> ${paper.abstract}
-                    </p>
-                    <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-slate-100 text-sm">
-                        <div class="flex items-center gap-4 text-xs text-slate-500">
-                            <span>${paper.date}</span>
-                            <span>&bull;</span>
-                            <span class="${paper.indexStatus.includes('Zenodo') || paper.indexStatus.includes('Journal') ? 'text-schoolGreen font-semibold' : ''}">${paper.indexStatus}</span>
+                <div class="relative border border-slate-800 rounded-3xl overflow-hidden shadow-2xl group">
+                    <div class="absolute inset-0 bg-cover bg-center z-0 transition-transform duration-700 group-hover:scale-105 opacity-25" style="background-image: url('${paper.bgImage}');"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0B0F19] via-[#0B0F19]/90 to-[#131B2E]/80 z-10"></div>
+                    
+                    <div class="relative z-20 p-6 sm:p-10 text-slate-200">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+                            <span class="text-xs font-semibold px-3 py-1 rounded-full ${paper.badgeBg}">${paper.journal}</span>
+                            <span class="text-xs text-yellow-400 font-mono">${paper.meta}</span>
                         </div>
-                        <div class="flex items-center gap-3">
-                            <a href="${paper.url}" target="_blank" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold rounded-xl text-xs transition-colors">${paper.urlText}</a>
-                            <a href="#submissions" class="px-4 py-2 bg-schoolGreen hover:bg-emerald-700 text-white font-semibold rounded-xl text-xs transition-colors shadow-sm">Download PDF</a>
+                        <h3 class="text-2xl sm:text-3xl font-bold font-serif text-white mb-3 group-hover:text-pressGold transition-colors">
+                            ${paper.title}
+                        </h3>
+                        <p class="text-xs text-yellow-200/80 mb-5 font-medium">${paper.authors}</p>
+                        <p class="text-sm text-slate-300 mb-8 leading-relaxed font-light">
+                            <strong class="text-white">Abstract:</strong> ${paper.abstract}
+                        </p>
+                        <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-slate-800 text-sm">
+                            <div class="flex items-center gap-4 text-xs text-slate-400">
+                                <span>${paper.date}</span>
+                                <span>&bull;</span>
+                                <span class="text-yellow-400 font-semibold">${paper.indexStatus}</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <a href="${paper.url}" target="_blank" class="px-5 py-2.5 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl text-xs backdrop-blur-md transition-colors border border-white/20">${paper.urlText}</a>
+                                <a href="#submissions" class="px-5 py-2.5 bg-pressGold hover:bg-pressLightGold text-black font-bold rounded-xl text-xs transition-colors shadow-lg">Download PDF</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1204,9 +1191,9 @@
         function appendMessage(text, sender) {
             const msgDiv = document.createElement('div');
             if (sender === 'user') {
-                msgDiv.className = "bg-schoolGreen text-white p-3 rounded-2xl rounded-tr-sm shadow-sm max-w-[85%] self-end font-medium";
+                msgDiv.className = "bg-pressGold text-black p-3 rounded-2xl rounded-tr-sm shadow-sm max-w-[85%] self-end font-bold";
             } else {
-                msgDiv.className = "bg-white border border-slate-200 p-3 rounded-2xl rounded-tl-sm shadow-sm max-w-[85%] self-start text-slate-700";
+                msgDiv.className = "bg-[#131B2E] border border-slate-800 p-3 rounded-2xl rounded-tl-sm shadow-sm max-w-[85%] self-start text-slate-200";
             }
             msgDiv.innerHTML = text;
             chatMessages.appendChild(msgDiv);
@@ -1216,7 +1203,7 @@
         function robotSpeak(text, callback) {
             avatarMouth.classList.add('robot-mouth-talking');
             robotStatus.textContent = "Speaking...";
-            robotStatus.className = "text-[10px] text-emerald-200 font-medium animate-pulse";
+            robotStatus.className = "text-[10px] text-yellow-300 font-medium animate-pulse";
 
             if ('speechSynthesis' in window) {
                 window.speechSynthesis.cancel();
@@ -1228,14 +1215,14 @@
                 utterance.onend = function() {
                     avatarMouth.classList.remove('robot-mouth-talking');
                     robotStatus.textContent = "Ready to speak";
-                    robotStatus.className = "text-[10px] text-emerald-200 font-medium";
+                    robotStatus.className = "text-[10px] text-yellow-300 font-medium";
                     if (callback) callback();
                 };
 
                 utterance.onerror = function() {
                     avatarMouth.classList.remove('robot-mouth-talking');
                     robotStatus.textContent = "Ready to speak";
-                    robotStatus.className = "text-[10px] text-emerald-200 font-medium";
+                    robotStatus.className = "text-[10px] text-yellow-300 font-medium";
                     if (callback) callback();
                 };
 
@@ -1244,7 +1231,7 @@
                 setTimeout(() => {
                     avatarMouth.classList.remove('robot-mouth-talking');
                     robotStatus.textContent = "Ready to speak";
-                    robotStatus.className = "text-[10px] text-emerald-200 font-medium";
+                    robotStatus.className = "text-[10px] text-yellow-300 font-medium";
                     if (callback) callback();
                 }, 2000);
             }
@@ -1254,28 +1241,28 @@
             const q = query.toLowerCase();
 
             if (q.includes('current issue') || q.includes('articles') || q.includes('papers') || q.includes('published')) {
-                return "Beep boop! Our Current Issue features your actual published research, including 'Mental Well-Being Among Senior High School Learners: Basis for Contextualized Mental Health Initiative'. Check the <a href='#current-issue' class='text-schoolGreen underline font-semibold'>Current Issue</a> section!";
+                return "Beep boop! Our Current Issue features your actual published research, including QUIDTECH-CAPE, MONIFIRE, and mental well-being studies. Check the <a href='#current-issue' class='text-pressGold underline font-semibold'>Current Issue</a> section!";
             }
             else if (q.includes('peer review') || q.includes('review process') || q.includes('blind') || q.includes('referee')) {
-                return "Bzzzt! All manuscripts undergo a rigorous double-blind peer review process where reviewers and authors remain completely anonymous. Initial reviews take 4 to 6 weeks. Check our <a href='#peer-review-policy' class='text-schoolGreen underline font-semibold'>Peer Review Policy</a>!";
+                return "Bzzzt! All manuscripts undergo a rigorous double-blind peer review process where reviewers and authors remain completely anonymous. Initial reviews take 4 to 6 weeks. Check our <a href='#peer-review-policy' class='text-pressGold underline font-semibold'>Peer Review Policy</a>!";
             } 
             else if (q.includes('ai') || q.includes('artificial intelligence') || q.includes('chatgpt') || q.includes('gpt')) {
                 return "Beep boop! Our AI policy strictly prohibits AI tools as co-authors. Authors may only use AI for grammar and language polishing. All AI assistance must be explicitly declared before the references section.";
             } 
             else if (q.includes('submit') || q.includes('submission') || q.includes('guidelines') || q.includes('manuscript')) {
-                return "To send an inquiry, fill out your name, email, title, and inquiry message in our online <a href='#submissions' class='text-schoolGreen underline font-semibold'>Submission Portal</a>!";
+                return "To send an inquiry, fill out your name, email, title, and inquiry message in our online <a href='#submissions' class='text-pressGold underline font-semibold'>Submission Portal</a>!";
             } 
             else if (q.includes('indexing') || q.includes('index') || q.includes('issn') || q.includes('zenodo') || q.includes('scholar')) {
-                return "Our publications are indexed across top global directories including Zenodo, ISSN, SSRN, ResearchGate, OpenAIRE, Google Scholar, ROAD, DOAJ, Crossref, and Dimensions. Check our <a href='#indexing' class='text-schoolGreen underline font-semibold'>Indexing</a> section!";
+                return "Our publications are indexed across top global directories including Zenodo, ISSN, SSRN, ResearchGate, OpenAIRE, Google Scholar, ROAD, DOAJ, Crossref, and Dimensions. Check our <a href='#indexing' class='text-pressGold underline font-semibold'>Indexing</a> section!";
             }
             else if (q.includes('contact') || q.includes('email') || q.includes('support') || q.includes('office')) {
-                return "You can reach our editorial support team at **editor@pinnaclepubs.com** or **editorpinnaclepubs@gmail.com**. View full details in our <a href='#contact' class='text-schoolGreen underline font-semibold'>Contact</a> section!";
+                return "You can reach our editorial support team at **editor@pinnaclepubs.com** or **editorpinnaclepubs@gmail.com**. View full details in our <a href='#contact' class='text-pressGold underline font-semibold'>Contact</a> section!";
             }
             else if (q.includes('hello') || q.includes('hi') || q.includes('hey')) {
-                return "Greetings, human researcher! 🤖 I am PAP-Bot. Ask me about your <a href='#current-issue' class='text-schoolGreen underline font-semibold'>Current Issue</a> articles, submission inquiries, or indexing directories!";
+                return "Greetings, human researcher! 🤖 I am PAP-Bot. Ask me about your <a href='#current-issue' class='text-pressGold underline font-semibold'>Current Issue</a> articles, submission inquiries, or indexing directories!";
             }
             else {
-                return "Beep! You can ask me about our <a href='#current-issue' class='text-schoolGreen underline font-semibold'>Current Issue</a> articles, <a href='#indexing' class='text-schoolGreen underline font-semibold'>Indexing</a>, or email our editors at editor@pinnaclepubs.com.";
+                return "Beep! You can ask me about our <a href='#current-issue' class='text-pressGold underline font-semibold'>Current Issue</a> articles, <a href='#indexing' class='text-pressGold underline font-semibold'>Indexing</a>, or email our editors at editor@pinnaclepubs.com.";
             }
         }
 
