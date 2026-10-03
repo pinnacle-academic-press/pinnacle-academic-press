@@ -355,372 +355,6 @@
         <!-- Marquee Wrapper with Fade Gradient Edges -->
         <div class="relative w-full overflow-hidden py-4">
             <div class="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
-            <div class="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-Here is the fully updated, complete single-file HTML code for your **Pinnacle Academic Press: Journal of Social Science and Education (JSSEE)** website. 
-
-This version includes **all four** of your published papers in the Current Issue section complete with their correct Zenodo links, author details, and abstracts:
-1. **MONIFIRE: Fire Monitoring System with CCTV Camera and Alert Notification, an Arduino Uno Prototype Project** (Zenodo)
-2. **Social Media Usage as a way of Coping with the Stress of Young Adults Enrolled in Online Class during the Covid-19 Pandemic** (Zenodo)
-3. **QUIDTECH-CAPE: Quality Index Development for Integrated Technology Assessment: Enhancing Capstone Project Evaluation** (Zenodo)
-4. **A Correlational Study on Facebook's Effect on the Self-Esteem of Senior High School Students in Adamson University** (Zenodo)
-
-```html
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pinnacle Academic Press | Journal of Social Science and Education</title>
-    <script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>
-    <link rel="preconnect" href="[https://fonts.googleapis.com](https://fonts.googleapis.com)">
-    <link rel="preconnect" href="[https://fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
-    <link href="[https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap](https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap)" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        schoolGreen: '#059669',       /* Emerald Green Accent */
-                        schoolDarkGreen: '#047857',   /* Darker Emerald */
-                        schoolLightBg: '#F0FDF4',     /* Light Mint Background */
-                        schoolCardBg: '#FFFFFF',      /* Pure White Card Tone */
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        serif: ['Playfair Display', 'serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        /* CSS Variables Definition */
-        :root {
-            --school-green: #059669;
-            --accent-pink: #FF1D58;
-            --subtle-pink: #F75990;
-            --highlight-yellow: #FFF685;
-        }
-
-        .hero-pattern {
-            background-image: radial-gradient(rgba(5, 150, 105, 0.08) 1px, transparent 1px);
-            background-size: 24px 24px;
-        }
-
-        /* Custom scrollbar styling */
-        .custom-scrollbar::-webkit-scrollbar {
-            width: 8px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-track {
-            background: #f1f5f9;
-            border-radius: 8px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-            background: #059669;
-            border-radius: 8px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-            background: #047857;
-        }
-
-        /* Infinite Horizontal Marquee Animation */
-        @keyframes marqueeScroll {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-
-        .marquee-track {
-            display: flex;
-            width: max-content;
-            animation: marqueeScroll 35s linear infinite;
-        }
-        .marquee-track:hover {
-            animation-play-state: paused;
-        }
-
-        /* 3D Animated Logo CSS */
-        .scene-3d {
-            perspective: 800px;
-        }
-
-        @keyframes rotate3D {
-            0% {
-                transform: rotateX(15deg) rotateY(0deg) rotateZ(0deg);
-            }
-            50% {
-                transform: rotateX(-15deg) rotateY(180deg) rotateZ(5deg);
-            }
-            100% {
-                transform: rotateX(15deg) rotateY(360deg) rotateZ(0deg);
-            }
-        }
-
-        @keyframes floatLogo {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-6px); }
-        }
-
-        @keyframes pulseGlow {
-            0%, 100% { filter: drop-shadow(0 0 10px rgba(5, 150, 105, 0.4)); }
-            50% { filter: drop-shadow(0 0 22px rgba(255, 29, 88, 0.8)); }
-        }
-
-        .animate-3d-logo {
-            transform-style: preserve-3d;
-            animation: rotate3D 10s linear infinite, floatLogo 4s ease-in-out infinite, pulseGlow 4s ease-in-out infinite;
-        }
-
-        /* Hero Text Animations */
-        @keyframes heroTextEntry {
-            0% {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes titleShimmer {
-            0%, 100% {
-                filter: drop-shadow(0 0 0px rgba(5, 150, 105, 0));
-                transform: scale(1);
-            }
-            50% {
-                filter: drop-shadow(0 0 12px rgba(5, 150, 105, 0.3));
-                transform: scale(1.01);
-            }
-        }
-
-        .animate-hero-text {
-            animation: heroTextEntry 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-        }
-
-        .animate-title-shimmer {
-            display: inline-block;
-            animation: titleShimmer 3.5s ease-in-out infinite;
-        }
-
-        /* Whole-Body Robot Animations */
-        @keyframes robotBlink {
-            0%, 90%, 100% { transform: scaleY(1); }
-            95% { transform: scaleY(0.1); }
-        }
-
-        @keyframes robotTalk {
-            0%, 100% { height: 3px; }
-            50% { height: 10px; }
-        }
-
-        @keyframes antennaPulse {
-            0%, 100% { opacity: 0.6; filter: drop-shadow(0 0 4px rgba(5, 150, 105, 0.7)); }
-            50% { opacity: 1; filter: drop-shadow(0 0 14px rgba(5, 150, 105, 1)); }
-        }
-
-        @keyframes fullRobotFloat {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-8px) rotate(1.5deg); }
-        }
-
-        @keyframes waveArm {
-            0%, 100% { transform: rotate(0deg); }
-            50% { transform: rotate(-20deg); }
-        }
-
-        .animate-full-robot {
-            animation: fullRobotFloat 3.5s ease-in-out infinite;
-            filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.15));
-        }
-
-        .robot-eye {
-            animation: robotBlink 4s infinite;
-            transform-origin: center;
-        }
-
-        .robot-mouth-talking {
-            animation: robotTalk 0.25s infinite ease-in-out;
-        }
-
-        .antenna-light {
-            animation: antennaPulse 1.5s infinite ease-in-out;
-        }
-
-        .robot-arm-waving {
-            animation: waveArm 1s ease-in-out infinite;
-            transform-origin: top center;
-        }
-
-        .fade-in-section {
-            opacity: 0;
-            transform: translateY(25px);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-            will-change: opacity, visibility, transform;
-        }
-
-        .fade-in-section.is-visible {
-            opacity: 1;
-            transform: none;
-        }
-    </style>
-</head>
-<body class="bg-white text-slate-800 font-sans antialiased selection:bg-[#059669] selection:text-white">
-
-    <!-- Header & Navigation -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20 gap-4">
-                <!-- Large 3D Animated Logo & Brand -->
-                <a href="#" class="flex items-center space-x-4 group shrink-0">
-                    <div class="w-14 h-14 rounded-2xl flex items-center justify-center bg-schoolGreen border-2 border-emerald-300 shadow-xl overflow-hidden scene-3d p-1.5 transition-transform duration-300 group-hover:scale-110">
-                        <svg viewBox="0 0 100 100" class="w-full h-full animate-3d-logo" xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
-                            <defs>
-                                <linearGradient id="gradRed" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#FF1D58" />
-                                    <stop offset="100%" stop-color="#990022" />
-                                </linearGradient>
-                                <linearGradient id="gradCyan" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#059669" />
-                                    <stop offset="100%" stop-color="#047857" />
-                                </linearGradient>
-                                <linearGradient id="gradPink" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#F75990" />
-                                    <stop offset="100%" stop-color="#FF1D58" />
-                                </linearGradient>
-                            </defs>
-                            <polygon points="10,90 35,35 45,75" fill="url(#gradRed)" opacity="0.95"/>
-                            <polygon points="10,90 45,75 25,95" fill="#880022" opacity="0.9"/>
-                            <polygon points="25,95 45,75 60,60 55,95" fill="url(#gradCyan)" opacity="0.95"/>
-                            <polygon points="55,10 85,55 60,60" fill="url(#gradPink)" opacity="0.9"/>
-                            <polygon points="85,55 90,90 55,95 60,60" fill="#991133" opacity="0.95"/>
-                            <polygon points="55,10 60,60 45,45" fill="#FFF685" opacity="0.7"/>
-                        </svg>
-                    </div>
-                    <div>
-                        <span class="text-lg lg:text-xl font-bold tracking-tight font-serif text-slate-950 whitespace-nowrap transition-colors group-hover:text-schoolGreen block">Pinnacle Academic Press</span>
-                        <span class="block text-[10px] lg:text-xs text-schoolGreen font-semibold tracking-wider uppercase whitespace-nowrap">Journal of Social Science and Education</span>
-                    </div>
-                </a>
-
-                <!-- Desktop Nav Links -->
-                <nav class="hidden xl:flex items-center space-x-4 text-sm font-medium">
-                    <a href="#home" class="text-schoolGreen font-semibold hover:text-emerald-700 transition-colors">Home</a>
-                    <a href="#journals" class="text-slate-600 hover:text-schoolGreen transition-colors">Journals</a>
-                    <a href="#current-issue" class="text-slate-600 hover:text-schoolGreen transition-colors">Current Issue</a>
-                    <a href="#catalog" class="text-slate-600 hover:text-schoolGreen transition-colors">Catalog</a>
-                    <a href="#about" class="text-slate-600 hover:text-schoolGreen transition-colors">About Us</a>
-                    <a href="#peer-review-policy" class="text-slate-600 hover:text-schoolGreen transition-colors">Peer Review</a>
-                    <a href="#indexing" class="text-slate-600 hover:text-schoolGreen transition-colors">Indexing</a>
-                    <a href="#submissions" class="text-slate-600 hover:text-schoolGreen transition-colors">Submissions</a>
-                    <a href="#contact" class="text-slate-600 hover:text-schoolGreen transition-colors">Contact</a>
-                </nav>
-
-                <!-- Tablet Nav Links (Compact) -->
-                <nav class="hidden md:flex xl:hidden items-center space-x-2.5 text-xs font-medium">
-                    <a href="#home" class="text-schoolGreen font-semibold">Home</a>
-                    <a href="#current-issue" class="text-slate-600 hover:text-schoolGreen">Current Issue</a>
-                    <a href="#journals" class="text-slate-600 hover:text-schoolGreen">Journals</a>
-                    <a href="#about" class="text-slate-600 hover:text-schoolGreen">About</a>
-                    <a href="#peer-review-policy" class="text-slate-600 hover:text-schoolGreen">Review</a>
-                    <a href="#indexing" class="text-slate-600 hover:text-schoolGreen">Indexing</a>
-                    <a href="#submissions" class="text-slate-600 hover:text-schoolGreen">Submissions</a>
-                </nav>
-
-                <!-- CTA Button -->
-                <div class="hidden lg:flex items-center shrink-0">
-                    <a href="#submissions" class="px-5 py-2.5 rounded-full bg-schoolGreen text-white text-sm font-bold hover:bg-emerald-700 hover:scale-105 active:scale-95 transition-all duration-200 shadow-lg shadow-emerald-600/25 whitespace-nowrap">
-                        REGISTRATION
-                    </a>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors focus:outline-none">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-2 shadow-lg transition-all">
-            <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-schoolGreen bg-emerald-50">Home</a>
-            <a href="#current-issue" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-schoolGreen">Current Issue &amp; Articles</a>
-            <a href="#journals" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-schoolGreen">Journals</a>
-            <a href="#catalog" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-schoolGreen">Catalog &amp; Books</a>
-            <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-schoolGreen">About Us</a>
-            <a href="#peer-review-policy" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-schoolGreen">Peer Review Policy</a>
-            <a href="#indexing" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-schoolGreen">Indexing &amp; Abstracting</a>
-            <a href="#submissions" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-schoolGreen">Submissions</a>
-            <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-schoolGreen">Contact</a>
-            <div class="pt-4">
-                <a href="#submissions" class="w-full text-center block px-4 py-2.5 rounded-full bg-schoolGreen text-white font-bold hover:bg-emerald-700 transition-colors">REGISTRATION</a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Hero Section with Animated Heading -->
-    <section id="home" class="relative hero-pattern py-24 lg:py-32 overflow-hidden border-b border-slate-200 bg-gradient-to-b from-emerald-50/50 to-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="max-w-3xl mx-auto text-center">
-                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-schoolGreen border border-emerald-300 mb-6 transition-transform hover:scale-105 duration-300 shadow-sm">
-                    Peer-Reviewed Open Access Publishing
-                </span>
-                
-                <h1 class="text-4xl sm:text-6xl font-bold font-serif tracking-tight text-slate-900 mb-6 leading-tight animate-hero-text">
-                    Advancing Scholarly Excellence in <br class="hidden sm:inline">
-                    <span class="text-schoolGreen italic animate-title-shimmer">Social Science &amp; Education</span>
-                </h1>
-
-                <p class="text-lg sm:text-xl text-slate-600 mb-10 leading-relaxed">
-                    Pinnacle Academic Press champions rigorous peer review, innovative pedagogical research, and interdisciplinary discourse to solve complex global challenges.
-                </p>
-
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="#current-issue" class="w-full sm:w-auto px-8 py-4 rounded-full bg-schoolGreen text-white font-bold hover:bg-emerald-700 hover:shadow-emerald-600/40 hover:-translate-y-0.5 transition-all duration-300 shadow-xl shadow-emerald-600/20">
-                        View Current Issue
-                    </a>
-                    <a href="#submissions" class="w-full sm:w-auto px-8 py-4 rounded-full bg-white hover:bg-slate-50 text-slate-700 font-semibold border-2 border-emerald-200 hover:border-schoolGreen hover:-translate-y-0.5 transition-all duration-300 shadow-sm">
-                        Author Guidelines
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Current Issue Section -->
-    <section id="current-issue" class="py-20 bg-slate-50 border-t border-slate-200 fade-in-section">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-xs font-semibold px-3 py-1 rounded-full bg-emerald-100 text-schoolGreen border border-emerald-200">Volume 4, Issue 3 (Published September 2026)</span>
-                <h2 class="text-3xl sm:text-4xl font-bold font-serif text-slate-900 mt-4 mb-4">Current Issue &amp; Recent Published Research</h2>
-                <p class="text-slate-600">Explore our peer-reviewed open access papers, featuring qualitative phenomenology, educator well-being, and quantitative educational frameworks.</p>
-            </div>
-
-            <!-- Published Articles Container -->
-            <div id="papers-container" class="space-y-6 max-w-4xl mx-auto">
-                <!-- Dynamically populated -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Real Journals Section (Infinite Horizontal Marquee) -->
-    <section id="journals" class="py-20 bg-white border-t border-slate-200 fade-in-section overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
-            <div class="text-center max-w-2xl mx-auto">
-                <h2 class="text-3xl font-bold font-serif text-slate-900 mb-4">Our Featured Peer-Reviewed Journals</h2>
-                <p class="text-slate-600">Promoting high-impact empirical research across psychology, educational sciences, and technology integration.</p>
-            </div>
-        </div>
-
-        <!-- Marquee Wrapper with Fade Gradient Edges -->
-        <div class="relative w-full overflow-hidden py-4">
-            <div class="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
             <div class="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
 
             <div class="marquee-track flex gap-8">
@@ -1276,7 +910,7 @@ This version includes **all four** of your published papers in the Current Issue
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="flex items-center space-x-3">
                 <div class="w-10 h-10 rounded-2xl overflow-hidden flex items-center justify-center bg-emerald-800 border border-emerald-300 p-1 scene-3d">
-                    <svg viewBox="0 0 100 100" class="w-full h-full animate-3d-logo" xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                    <svg viewBox="0 0 100 100" class="w-full h-full animate-3d-logo" xmlns="http://www.w3.org/2000/svg">
                         <polygon points="10,90 35,35 45,75" fill="url(#gradRed)" opacity="0.95"/>
                         <polygon points="10,90 45,75 25,95" fill="#880022" opacity="0.9"/>
                         <polygon points="25,95 45,75 60,60 55,95" fill="url(#gradCyan)" opacity="0.95"/>
@@ -1391,6 +1025,18 @@ This version includes **all four** of your published papers in the Current Issue
         // ==========================================
         const currentIssuePapers = [
             {
+                journal: "International Journal of Educational Research",
+                badgeBg: "bg-[#FF1D58] text-white",
+                meta: "ISSN: 0883-0355",
+                title: "Teacher Job Satisfaction: Foundations for Strategies to Promote Well-Being and Work-Life Balance",
+                authors: "Author: Carbonel, Blessie",
+                abstract: "Teachers have high levels of job satisfaction with regard to professionalism, administration, and job security, but low job satisfaction with work-life balance, autonomy, and student behavior. There is an association between age ($r = .365$) and years of experience ($r = .874$) and job satisfaction. It is recommended that school districts establish programs that enhance work life, create opportunities for collaboration, increase autonomy, and improve the physical working conditions of educators.",
+                date: "Published: September 2026",
+                indexStatus: "Zenodo Indexed",
+                url: "https://zenodo.org/records/22851910",
+                urlText: "View on Zenodo"
+            },
+            {
                 journal: "Journal of Social Science and Education (JSSEE)",
                 badgeBg: "bg-[#059669] text-white",
                 meta: "Published September 23, 2026 &bull; Version 1",
@@ -1399,7 +1045,7 @@ This version includes **all four** of your published papers in the Current Issue
                 abstract: "As the COVID-19 pandemic arises, there are certain ways on how people adapt or cope with stress due to drastic changes and the negative effects of the pandemic such as using different social media platforms such as Facebook, YouTube, Twitter, TikTok and many more. Correlational research was done to 138 randomly selected young adults from the age range of 18-35 from the first year to fourth year students of Bachelor of Science in Accountancy were the primary respondents of this study conducted at Our Lady of Fatima University- Pampanga Campus. The SMactive, an adapted test, and PSS and SCRI, standardized tests, was used in this research as part of gathering the data. The results showed a positive Moderate Correlation between the social media usage and the perceived stress level of the respondents with a significant value of -0.53 and the computed p-value of 0.540 at significance level of .05. Moreover, the respondents' social media usage and stress coping level also showed a positive Slight Correlation with the significant value of 0.113, and the computed p-value of 0.187 at significance level of .05. which rejects the Null Hypothesis. Overall, there is a relationship between significant relationship between the respondents' social media usage and their perceived stress level. The respondent's social media usage has a significant relationship with their stress coping level.",
                 date: "Published: September 23, 2026",
                 indexStatus: "Zenodo Indexed",
-                url: "[https://zenodo.org/records/22920950](https://zenodo.org/records/22920950)",
+                url: "https://zenodo.org/records/22920950",
                 urlText: "View on Zenodo"
             },
             {
@@ -1411,7 +1057,7 @@ This version includes **all four** of your published papers in the Current Issue
                 abstract: "Fires pose significant dangers, disrupting lives and livelihoods. They are disasters triggered by natural, artificial, or human-made factors. To ensure personal safety, early warnings are crucial. A CCTV system with fire, smoke, and gas sensors provides real-time monitoring and safeguards homes, workplaces, and commercial areas against potential threats. The study proposed an Arduino Uno prototype project called MONIFIRE, which integrates cameras with fire alarm systems to enhance security in buildings and construction sites. The system, which was assessed based on ISO 25010 standards and the Technology Acceptance Model (TAM), provides timely information to homeowners and firefighters, helping reduce losses and potential fatalities. Future improvements may include additional features and alignment with updated ISO standards. The Arduino Uno prototype project, MONIFIRE, is a fire monitoring system with a CCTV camera and alert notification feature. It was assessed by IT professionals, students, and personnel from the Guimba Fire Station. The system was evaluated through survey involving 100 respondents consisting of 50 IT students, 30 other students, 10 professionals, and 10 fire station personnel. The system's functional suitability, performance efficiency, compatibility, usability, reliability, security, maintainability, and portability were evaluated based on ISO 25010 and the Technology Acceptance Model.",
                 date: "Published: September 22, 2026",
                 indexStatus: "Zenodo Indexed",
-                url: "[https://zenodo.org/records/22896891](https://zenodo.org/records/22896891)",
+                url: "https://zenodo.org/records/22896891",
                 urlText: "View on Zenodo"
             },
             {
@@ -1423,7 +1069,7 @@ This version includes **all four** of your published papers in the Current Issue
                 abstract: "This study develops and implements QUIDTECH-CAPE, a developmental research framework that integrates the ISO/IEC 25010 software quality model with the Technology Acceptance Model (TAM). Tested among 40 BSIT students and validated by 5 IT experts at Our Lady of the Sacred Heart College of Guimba, Inc., the framework establishes a standardized, 7-construct matrix to evaluate undergraduate capstone computing projects objectively while balancing technical software metrics with behavioral user-acceptance criteria.",
                 date: "Published: September 24, 2026",
                 indexStatus: "Zenodo Indexed",
-                url: "[https://zenodo.org/records/22940748](https://zenodo.org/records/22940748)",
+                url: "https://zenodo.org/records/22940748",
                 urlText: "View on Zenodo"
             },
             {
@@ -1435,7 +1081,7 @@ This version includes **all four** of your published papers in the Current Issue
                 abstract: "Social media platforms, particularly Facebook, have gained immense popularity and significantly impact the psychological well-being of users. Upward comparisons made on Facebook can severely affect self-esteem. This study aims to test the relationship between Facebook usage and self-esteem among 100 Grade 12 STEM Senior High School students at Adamson University through survey-questionnaires. Correlation and regression models were applied to the gathered data. The findings indicate a direct negative effect: as students increase their social media usage, their self-esteem decreases, proving a strong relationship between social media and self-esteem.",
                 date: "Published: September 24, 2026",
                 indexStatus: "Zenodo Indexed",
-                url: "[https://zenodo.org/records/22943427](https://zenodo.org/records/22943427)",
+                url: "https://zenodo.org/records/22943427",
                 urlText: "View on Zenodo"
             },
             {
@@ -1447,7 +1093,7 @@ This version includes **all four** of your published papers in the Current Issue
                 abstract: "This study investigates the structural relationships between pedagogical content knowledge, constructivist epistemological beliefs, and instructional intentions among pre-service mathematics teachers in the Philippines. Utilizing quantitative structural modeling techniques, findings indicate that constructivist beliefs significantly mediate the impact of foundational knowledge on the practical integration of contextualized real-life tasks in classrooms.",
                 date: "Published: August 2026",
                 indexStatus: "Zenodo Indexed",
-                url: "[https://zenodo.org/records/22943427](https://zenodo.org/records/22943427)",
+                url: "https://zenodo.org/records/22943427",
                 urlText: "View on Zenodo"
             },
             {
@@ -1459,20 +1105,8 @@ This version includes **all four** of your published papers in the Current Issue
                 abstract: "Transitioning into higher education as a first-generation student involves navigating institutional, cultural, and psychological shifts that extend far beyond academic achievement. Utilizing a descriptive-interpretative qualitative framework rooted in the philosophical traditions of Husserl and Heidegger, in-depth, semi-structured interviews were conducted with $N = 12$ undergraduate participants. Data analysis using Van Manen's hermeneutic phenomenological reduction revealed three core thematic structures: (a) the imposter's shadow and institutional alienation; (b) familial bridge-building; and (c) transformative resilience.",
                 date: "Published: September 21, 2026",
                 indexStatus: "Zenodo Indexed",
-                url: "[https://zenodo.org](https://zenodo.org)",
+                url: "https://zenodo.org",
                 urlText: "View on Zenodo"
-            },
-            {
-                journal: "International Journal of Educational Research",
-                badgeBg: "bg-[#FF1D58] text-white",
-                meta: "ISSN: 0883-0355",
-                title: "Teacher Job Satisfaction: Foundations for Strategies to Promote Well-Being and Work-Life Balance",
-                authors: "Author: Carbonel, Blessie",
-                abstract: "Teachers have high levels of job satisfaction with regard to professionalism, administration, and job security, but low job satisfaction with work-life balance, autonomy, and student behavior. There is an association between age ($r = .365$) and years of experience ($r = .874$) and job satisfaction. It is recommended that school districts establish programs that enhance work life, create opportunities for collaboration, increase autonomy, and improve the physical working conditions of educators.",
-                date: "Published: September 2026",
-                indexStatus: "Open Access",
-                url: "#submissions",
-                urlText: "Abstract"
             }
         ];
 
@@ -1620,7 +1254,7 @@ This version includes **all four** of your published papers in the Current Issue
             const q = query.toLowerCase();
 
             if (q.includes('current issue') || q.includes('articles') || q.includes('papers') || q.includes('published')) {
-                return "Beep boop! Our Current Issue features your actual published research, including 'Social Media Usage as a way of Coping with the Stress of Young Adults', 'MONIFIRE', and 'QUIDTECH-CAPE'. Check the <a href='#current-issue' class='text-schoolGreen underline font-semibold'>Current Issue</a> section!";
+                return "Beep boop! Our Current Issue features your actual published research, including 'Teacher Job Satisfaction: Foundations for Strategies to Promote Well-Being and Work-Life Balance'. Check the <a href='#current-issue' class='text-schoolGreen underline font-semibold'>Current Issue</a> section!";
             }
             else if (q.includes('peer review') || q.includes('review process') || q.includes('blind') || q.includes('referee')) {
                 return "Bzzzt! All manuscripts undergo a rigorous double-blind peer review process where reviewers and authors remain completely anonymous. Initial reviews take 4 to 6 weeks. Check our <a href='#peer-review-policy' class='text-schoolGreen underline font-semibold'>Peer Review Policy</a>!";
