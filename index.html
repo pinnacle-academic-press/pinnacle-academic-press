@@ -331,7 +331,7 @@
     <section id="current-issue" class="py-20 bg-slate-50 border-t border-slate-200 fade-in-section">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-xs font-semibold px-3 py-1 rounded-full bg-emerald-100 text-schoolGreen border border-emerald-200">Volume 4, Issue 3 (Published September 2026)</span>
+                <span class="text-xs font-semibold px-3 py-1 rounded-full bg-emerald-100 text-schoolGreen border border-emerald-200">Volume 4, Issue 3 (Published September / October 2026)</span>
                 <h2 class="text-3xl sm:text-4xl font-bold font-serif text-slate-900 mt-4 mb-4">Current Issue &amp; Recent Published Research</h2>
                 <p class="text-slate-600">Explore our peer-reviewed open access papers, featuring qualitative phenomenology, educator well-being, and quantitative educational frameworks.</p>
             </div>
@@ -1025,6 +1025,18 @@
         // ==========================================
         const currentIssuePapers = [
             {
+                journal: "Journal of Social Science and Education (JSSEE)",
+                badgeBg: "bg-[#059669] text-white",
+                meta: "Published October 2, 2026 &bull; Version 1",
+                title: "Mental Well-Being Among Senior High School Learners: Basis for Contextualized Mental Health Initiative",
+                authors: "Author: Fabros, Jr., Reynaldo B. (Researcher)¹",
+                abstract: "Mental health is a vital at adolescent development. This study aimed to determine the mental well-being of senior high school learners in terms of depression, anxiety, and stress; identify the perceived causes of these conditions in terms of academic, personal, lifestyle, social, and financial; and propose a contextualized mental health initiative based on the findings. The study utilized a descriptive research design involving 330 senior high school learners at Victoria National High School, Victoria, Tarlac, selected through stratified random sampling. Data was gathered using the standardized Depression Anxiety Stress Scale (DASS-21) and a researcher-made questionnaire on the causes of depression, anxiety, and stress. Frequency counts, percentages, weighted mean, and descriptive statistics were used in analyzing the data. Findings revealed that most respondents had normal levels of depression and normal levels of stress. However, anxiety is the most prominent concern, with the majority of respondents classified under moderate anxiety and severe anxiety. Furthermore, all identified causes were perceived as significant causes of depression, anxiety, and stress. Among these, academics ranked highest, followed by lifestyle, financial, personal, and social. These results indicate that learners' mental health concerns are influenced by both school-related and personal life circumstances. Based on the findings, a contextualized mental health initiative entitled KALMADO (Kaagapay sa Alagang Lakas-Mental at Damdamin ng mga Estudyante) was proposed. The initiative includes programs on academic support, personal wellness, healthy lifestyle promotion, peer support, and financial guidance. It is recommended that schools implement initiatives to support the mental well-being of the learners.",
+                date: "Published: October 2, 2026",
+                indexStatus: "Zenodo Indexed",
+                url: "https://zenodo.org/records/23103988",
+                urlText: "View on Zenodo"
+            },
+            {
                 journal: "International Journal of Educational Research",
                 badgeBg: "bg-[#FF1D58] text-white",
                 meta: "ISSN: 0883-0355",
@@ -1094,18 +1106,6 @@
                 date: "Published: August 2026",
                 indexStatus: "Zenodo Indexed",
                 url: "https://zenodo.org/records/22943427",
-                urlText: "View on Zenodo"
-            },
-            {
-                journal: "North American Journal of Psychology (Version v2)",
-                badgeBg: "bg-[#FF1D58] text-white",
-                meta: "Zenodo Repository &bull; Open Access",
-                title: "Between Two Worlds: A Phenomenological Study of Cultural Splitting and Identity Synthesis Among First-Generation Scholars",
-                authors: "Authors: Dalimeg, Juvenal (Editor); Figueroa, Vladimir; Reyes, Diosdado; Villanueva, Elizor; Lansang, Christian",
-                abstract: "Transitioning into higher education as a first-generation student involves navigating institutional, cultural, and psychological shifts that extend far beyond academic achievement. Utilizing a descriptive-interpretative qualitative framework rooted in the philosophical traditions of Husserl and Heidegger, in-depth, semi-structured interviews were conducted with $N = 12$ undergraduate participants. Data analysis using Van Manen's hermeneutic phenomenological reduction revealed three core thematic structures: (a) the imposter's shadow and institutional alienation; (b) familial bridge-building; and (c) transformative resilience.",
-                date: "Published: September 21, 2026",
-                indexStatus: "Zenodo Indexed",
-                url: "https://zenodo.org",
                 urlText: "View on Zenodo"
             }
         ];
@@ -1254,7 +1254,7 @@
             const q = query.toLowerCase();
 
             if (q.includes('current issue') || q.includes('articles') || q.includes('papers') || q.includes('published')) {
-                return "Beep boop! Our Current Issue features your actual published research, including 'Teacher Job Satisfaction: Foundations for Strategies to Promote Well-Being and Work-Life Balance'. Check the <a href='#current-issue' class='text-schoolGreen underline font-semibold'>Current Issue</a> section!";
+                return "Beep boop! Our Current Issue features your actual published research, including 'Mental Well-Being Among Senior High School Learners: Basis for Contextualized Mental Health Initiative'. Check the <a href='#current-issue' class='text-schoolGreen underline font-semibold'>Current Issue</a> section!";
             }
             else if (q.includes('peer review') || q.includes('review process') || q.includes('blind') || q.includes('referee')) {
                 return "Bzzzt! All manuscripts undergo a rigorous double-blind peer review process where reviewers and authors remain completely anonymous. Initial reviews take 4 to 6 weeks. Check our <a href='#peer-review-policy' class='text-schoolGreen underline font-semibold'>Peer Review Policy</a>!";
